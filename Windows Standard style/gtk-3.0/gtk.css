@@ -1,0 +1,56 @@
+/*# name: Windows Standard style
+  # author: Grassmunk
+  # author: lunarplums
+  # date: May 16th, 2024
+  # description: A Windows 9x theme for XFCE.*/
+
+  /* [Control Panel\Colors] */
+@define-color ActiveTitle		rgb (0, 0, 128);
+@define-color Background		rgb (0, 128, 128);
+@define-color Hilight			rgb (0, 0, 128);
+@define-color HilightText		rgb (255, 255, 255);
+@define-color TitleText			rgb (255, 255, 255);
+@define-color Window			rgb (255, 255, 255);
+@define-color WindowText		rgb (0, 0, 0);
+@define-color ScrollBar			rgb (192, 192, 192);
+@define-color InactiveTitle		rgb (128, 128, 128);
+@define-color Menu			rgb (192, 192, 192);
+@define-color WindowFrame		rgb (0, 0, 0);
+@define-color MenuText			rgb (0, 0, 0);
+@define-color ActiveBorder		rgb (192, 192, 192);
+@define-color InactiveBorder		rgb (192, 192, 192);
+@define-color AppWorkspace		rgb (128, 128, 128);
+@define-color ButtonFace		rgb (192, 192, 192);
+@define-color ButtonShadow		rgb (128, 128, 128);
+@define-color GrayText			rgb (128, 128, 128);
+@define-color ButtonText		rgb (0, 0, 0);
+@define-color InactiveTitleText		rgb (192, 192, 192);
+@define-color ButtonHilight		rgb (255, 255, 255);
+@define-color ButtonDkShadow		rgb (0, 0, 0);
+@define-color ButtonLight		rgb (223, 223, 223);
+@define-color InfoText			rgb (0, 0, 0);
+@define-color InfoWindow		rgb (255, 255, 225);
+@define-color GradientActiveTitle	rgb (16, 132, 208);
+@define-color GradientInactiveTitle	rgb (181, 181, 181);
+@define-color ButtonAlternateFace	rgb (192, 192, 192);
+@define-color HotTrackingColor		rgb (0, 0, 128);
+@define-color MenuHilight		rgb (0, 0, 128);
+@define-color MenuBar			rgb (192, 192, 192);
+
+/* [Terminal\Colors] */
+@define-color Black		rgb(0, 0, 0);
+@define-color Red		rgb(168, 0, 0);
+@define-color Green		rgb(0, 168, 0);
+@define-color Yellow		rgb(168, 84, 0);
+@define-color Blue		rgb(0, 0, 168);
+@define-color Purple		rgb(168, 0, 168);
+@define-color Cyan		rgb(0, 168, 168);
+@define-color White		rgb(168, 168, 168);
+@define-color LightBlack	rgb(84, 84, 84);
+@define-color LightRed		rgb(252, 84, 84);
+@define-color LightGreen	rgb(84, 252, 84);
+@define-color LightYellow	rgb(252, 252, 84);
+@define-color LightBlue		rgb(84, 84, 252);
+@define-color LightPurple	rgb(252, 84, 252);
+@define-color LightCyan		rgb(84, 252, 252);
+@define-color LightWhite	rgb(252, 252, 252);
