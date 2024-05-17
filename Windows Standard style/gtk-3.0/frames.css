@@ -1,0 +1,79 @@
+/* Frames */
+frame,
+frame.view {
+}
+frame border{
+	border: 3px solid @ButtonDkShadow;
+	border-image: url("../Resources/GDI32/frame_groove.png");
+	border-image-slice: 3 3 3 3;
+}
+frame.border-inset border {
+	border: 3px solid @ButtonDkShadow;
+	border-image-source: url("../Resources/GDI32/frame_inset.png");
+	border-image-slice: 3 3 3 3;
+}
+frame.border-inset label {
+}
+frame.border-outset border {
+	border: 3px solid @ButtonDkShadow;
+	border-image-source: url("../Resources/GDI32/frame_outset.png");
+	border-image-slice: 3 3 3 3;
+}
+frame.border-outset label {
+}
+frame.border-groove border {
+	padding: 1px;
+	border: 2px solid @ButtonDkShadow;
+	border-image-source: url("../Resources/GDI32/frame_groove.png");
+	border-image-slice: 2 2 2 2;
+}
+frame.border-groove label {
+}
+frame.border-ridge border {
+	background-color: @Window;
+	padding: 1px;
+	border: 2px solid @ButtonDkShadow;
+	border-image-source: url("../Resources/GDI32/frame_ridge.png");
+	border-image-slice: 2 2 2 2;
+}
+frame.border-ridge label {
+}
+frame > list, frame > .view  {
+}
+frame > label {
+}
+
+statusbar > frame border {
+	border-image-source: url("../Resources/GDI32/frame_basic.png");
+	border-image-slice: 3 3 3 3;
+}
+statusbar frame label {
+}
+statusbar {
+}
+statusbar frame box {
+}
+
+statusbar separator {
+}
+
+scrolledwindow.frame {
+	background-color: @Window;
+	border: 3px solid @ButtonDkShadow;
+	border-image-source: url("../Resources/GDI32/frame_scrolledwindow.png");
+	border-image-slice: 3 3 3 3;
+}
+
+
+.osd.frame {
+	background-color: #ff0000;
+}
+
+stack > box > frame {
+	background-color: #ff0000;
+}
+
+entry window frame {
+	background-color: #ff0000;
+}
+

@@ -1,0 +1,24 @@
+/* Window */
+window decoration,
+dialog > decoration {
+	background-color: #ff0000;
+}
+
+/* Server-side decoration (SSD) */
+window.ssd headerbar,
+window.ssd .titlebar {
+	background-color: #ff0000;
+}
+window.ssd .titlebar:backdrop {
+	background-color: #ff0000;
+}
+window.ssd .titlebar label {
+	background-color: #ff0000;
+}
+window.ssd .titlebar label:backdrop,
+window.ssd .titlebar:backdrop label {
+	background-color: #ff0000;
+}
+window.csd tooltip {
+	background-color: #ff0000;
+}

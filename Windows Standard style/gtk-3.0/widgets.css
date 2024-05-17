@@ -1,0 +1,392 @@
+/* default */
+/* * {
+  -GtkHTML-link-color: @HotTrackingColor;
+  -GtkIMHtml-hyperlink-color: @HotTrackingColor;
+  -GtkMenu-horizontal-offset: -9px;
+  -GtkMenu-vertical-offset: 0px;
+  -GtkScrollbar-has-backward-stepper: true;
+  -GtkScrollbar-has-forward-stepper: true;
+  -GtkScrolledWindow-scrollbar-spacing: 0;
+  -GtkTextView-error-underline-color: @Red;
+  -GtkToolButton-icon-spacing: 6;
+  -GtkToolItemGroup-expander-size: 8;
+  -GtkWindow-resize-grip-default: true;
+  -GtkWindow-resize-grip-height: 16;
+  -GtkWindow-resize-grip-width: 16;
+  -WnckTasklist-fade-overlay-rect: 0;
+  -GtkTreeView-expander-size: 16;
+  -GtkTreeView-horizontal-separator: 1;
+  -GtkTreeView-grid-line-width: 1;
+  -GtkTreeView-grid-line-pattern: '';
+  -GtkTreeView-tree-line-width: 1;
+  -GtkTreeView-tree-line-pattern: '';
+  -GtkMenuItem-toggle-spacing: 4;
+  -GtkDialog-button-spacing: -4;
+  -GtkMessageDialog-message-border: 0;
+  -GtkWindow-resize-grip-default: true;
+  background-clip: unset;
+  outline-width: 1px;
+  outline-offset: 0px;
+  outline-color: @AppWorkspace;
+  outline-style: solid;
+} */
+
+.background {
+  background-color: red;
+  color: @WindowText;
+}
+
+iconview {
+}
+iconview:hover {
+}
+iconview:selected {
+	background-color: @Hilight;
+	color: @HilightText;
+}
+
+:disabled, :disabled:disabled {
+	-gtk-icon-shadow: 1px 1px @ButtonHilight;
+	-gtk-icon-effect: dim;
+	color: @GrayText;
+	text-shadow: 1px 1px @ButtonHilight;
+}
+
+/* There appears to be a bug(?) in gtk treeviews on :focus with outlines that will cause a momentary displacement of the UI. Keep the treeview exclusion! */
+:focus:not(treeview):not(view):not(checkbutton):not(radiobutton) {
+	-gtk-outline-radius: 0px;
+	outline: 1px dotted @ButtonDkShadow;
+}
+
+.gtkstyle-fallback {
+	background-color: #ff0000;
+}
+.gtkstyle-fallback:hover {
+	background-color: #ff0000;
+}
+.gtkstyle-fallback:active {
+	background-color: #ff0000;
+}
+.gtkstyle-fallback:disabled {
+	background-color: #ff0000;
+}
+.gtkstyle-fallback:selected {
+	background-color: #ff0000;
+}
+
+stepper,
+.stepper {
+}
+
+slider,
+.slider {
+}
+
+border.flat {
+}
+
+/****************
+* drawing area *
+****************/
+
+/* FINDME */
+GtkDrawingArea {
+	background-color: #ff0000;
+}
+
+GtkDrawingArea:disabled {
+	background-color: #ff0000;
+}
+
+
+/***********
+* gtkhtml *
+***********/
+
+/* FINDME */
+GtkHTML {
+	background-color: #ff0000;
+}
+
+/************
+* calendar *
+************/
+
+calendar {
+}
+
+/*Calendar content*/
+calendar.view {
+	background-color: @Window;
+}
+
+/* Month and year */
+calendar.header {
+	color: @ButtonFace;
+	background-color: @InactiveTitle;
+}
+
+/* Calendar week, day label */
+calendar.highlight {
+}
+
+/* day selected */
+calendar:selected {
+	outline-offset: 10px;
+	background-color: @Hilight;
+	color: @HilightText;
+	outline-offset: -1px;
+}
+
+
+/************
+* expander *
+************/
+
+expander arrow {
+	background-image: url("../Resources/Marlett/arrow_right.png");
+}
+expander arrow:hover {
+	background-image: url("../Resources/Marlett/arrow_right_selected.png");
+}
+expander arrow:checked {
+	background-image: url("../Resources/Marlett/arrow_down.png");
+}
+expander arrow:checked:hover {
+	background-image: url("../Resources/Marlett/arrow_down_selected.png");
+}
+treeview.view.expander {
+	-gtk-icon-palette: default;
+	-gtk-icon-source: -gtk-icontheme('pane-show-symbolic');
+}
+treeview.view.expander:selected {
+	color: @HilightText;
+	-gtk-icon-source: -gtk-icontheme('pane-show-symbolic');
+}
+treeview.view.expander:checked {
+	-gtk-icon-source: -gtk-icontheme('pane-hide-symbolic');
+}
+treeview.view.expander:checked:selected {
+	color: @HilightText;
+	-gtk-icon-source: -gtk-icontheme('pane-hide-symbolic');
+}
+
+/************
+* iconview *
+************/
+iconview.view.cell {
+}
+
+/***********
+* infobar *
+***********/
+infobar {
+	background-color: #ff0000;
+}
+/* The Info bar uses the colors and button layout from clippy! */
+.info {
+	background-color: #ff0000;
+}
+.warning {
+	background-color: #ff0000;
+}
+.question {
+	background-color: #ff0000;
+}
+.error {
+	background-color: #ff0000;
+}
+
+/*******************
+* symbolic images *
+*******************/
+/* FINDME */
+.image {
+	background-color: #ff0000;
+}
+.image:hover {
+	background-color: #ff0000;
+}
+.image:selected,
+.image:selected:hover {
+	background-color: #ff0000;
+}
+.view.image,
+.view.image:hover {
+	background-color: #ff0000;
+}
+.view.image:selected,
+.view.image:selected:hover {
+	background-color: #ff0000;
+}
+
+/*******************
+* slider / switch *
+*******************/
+switch {
+}
+media_playpause {
+}
+
+/****************
+* stacksidebar *
+****************/
+stacksidebar separator {
+}
+stacksidebar list {
+}
+stacksidebar.sidebar list {
+}
+stacksidebar list row {
+}
+stacksidebar list row label {
+}
+stacksidebar list row:selected,
+stacksidebar list row:selected:focus,
+stacksidebar list row:selected:hover {
+}
+
+/***********
+* stack *
+***********/
+/* Some applications will use stacks in non-conventional ways. This should prevent theming of .view in gtk-viewports.css from affecting stack views. */
+stack.view {
+}
+stack overlay box box scrolledwindow viewport list row {
+}
+
+/***********
+* sidebar *
+***********/
+.sidebar {
+}
+.sidebar viewport.frame {
+}
+.sidebar list {
+}
+.sidebar viewport list row {
+}
+.sidebar viewport list row:selected {
+}
+.sidebar.view,
+.sidebar .view {
+}
+.sidebar {
+}
+.sidebar-item {
+}
+.sidebar-item > Gtklabel {
+}
+.sidebar-item.needs-attention > Gtklabel {
+}
+.sidebar-button.button.image-button {
+}
+.sidebar-button.button:not(:hover):not(:active) > GtkImage {
+}
+.sidebar-item {
+}
+.sidebar-item.needs-attention > GtkLabel {
+}
+
+/**********
+* switch *
+**********/
+switch {
+}
+switch:disabled {
+}
+switch slider {
+}
+switch image,
+switch:disabled image,
+switch:disabled:checked image {
+}
+switch:checked {
+}
+
+/***************
+* Colorswatch *
+***************/
+row colorswatch {
+}
+button colorswatch {
+}
+colorswatch {
+}
+colorswatch :selected {
+}
+button:active colorswatch {
+}
+
+/************************
+* overshoot undershoot *
+************************/
+/* get rid of these frekin overshoots, this isen't a phone! */
+overshoot, undershoot {
+}
+
+/************
+* Box Link *
+************/
+box label link {
+}
+box label link:hover {
+}
+
+/*******
+* osd *
+*******/
+.background.osd {
+}
+overlay.osd {
+}
+overlay toolbar.osd {
+}
+overlay frame {
+}
+
+/**************
+* header-bar *
+**************/
+headerbar .title {
+}
+headerbar .subtitle {
+}
+
+/**************
+* rubberband *
+**************/
+.rubberband,
+rubberband,
+.view .rubberband,
+flowbox rubberband,
+treeview.view rubberband,
+.content-view rubberband {
+}
+
+/* Misc stuff */
+flowboxchild {
+}
+flowbox checkbutton:checked {
+}
+textview text,
+grid viewport box box textview {
+}
+
+/* dialog-vbox */
+.dialog-vbox {
+}
+.dialog-vbox flowbox flowboxchild:focus {
+}
+
+/* Spinner */
+@keyframes spin {
+}
+spinner {
+}
+spinner:backdrop {
+}
+spinner:checked {
+}
+spinner:checked:disabled {
+}

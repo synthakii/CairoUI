@@ -54,3 +54,29 @@
 @define-color LightPurple	rgb(252, 84, 252);
 @define-color LightCyan		rgb(84, 252, 252);
 @define-color LightWhite	rgb(252, 252, 252);
+
+/* Please keep these in their original load order. */
+@import	url("widgets.css");
+@import url("buttons.css");
+@import url("checks_radio.css");
+@import url("frames.css");
+@import url("viewports.css");
+@import url("scrolledwindows.css");
+@import url("list_cell_and_rows.css");
+@import url("paned.css");
+@import url("separators.css");
+@import url("treeviews.css");
+@import url("entry.css");
+@import url("combobox.css");
+@import url("scrollbar.css");
+@import url("assistant.css");
+@import url("headerbars.css");
+@import url("menu.css");
+@import url("notebooks.css");
+@import url("progressbar.css");
+@import url("popovers.css");
+@import url("titlebars.css");
+@import url("toolbar.css");
+@import url("window.css");
+@import url("windowbuttons.css");
+@import url("messagedialog.css");
