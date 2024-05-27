@@ -1,38 +1,26 @@
 /* default */
-/* * {
-  -GtkHTML-link-color: @HotTrackingColor;
-  -GtkIMHtml-hyperlink-color: @HotTrackingColor;
-  -GtkMenu-horizontal-offset: -9px;
-  -GtkMenu-vertical-offset: 0px;
-  -GtkScrollbar-has-backward-stepper: true;
-  -GtkScrollbar-has-forward-stepper: true;
-  -GtkScrolledWindow-scrollbar-spacing: 0;
-  -GtkTextView-error-underline-color: @Red;
-  -GtkToolButton-icon-spacing: 6;
-  -GtkToolItemGroup-expander-size: 8;
-  -GtkWindow-resize-grip-default: true;
-  -GtkWindow-resize-grip-height: 16;
-  -GtkWindow-resize-grip-width: 16;
-  -WnckTasklist-fade-overlay-rect: 0;
-  -GtkTreeView-expander-size: 16;
-  -GtkTreeView-horizontal-separator: 1;
-  -GtkTreeView-grid-line-width: 1;
-  -GtkTreeView-grid-line-pattern: '';
-  -GtkTreeView-tree-line-width: 1;
-  -GtkTreeView-tree-line-pattern: '';
-  -GtkMenuItem-toggle-spacing: 4;
-  -GtkDialog-button-spacing: -4;
-  -GtkMessageDialog-message-border: 0;
-  -GtkWindow-resize-grip-default: true;
-  background-clip: unset;
-  outline-width: 1px;
-  outline-offset: 0px;
-  outline-color: @AppWorkspace;
-  outline-style: solid;
-} */
+* {
+	-GtkHTML-link-color: @HotTrackingColor;
+	-GtkIMHtml-hyperlink-color: @HotTrackingColor;
+
+	-GtkTreeView-expander-size: 20;
+	-GtkTreeView-horizontal-separator: 6;
+	-GtkTreeView-vertical-separator: -1;
+
+	-GtkMenu-horizontal-offset: -9px;
+	-GtkMenu-vertical-offset: 0px;
+
+	-GtkScrollbar-has-backward-stepper: true;
+	-GtkScrollbar-has-forward-stepper: true;
+
+	-GtkScrolledWindow-scrollbar-spacing: 0;
+
+	-GtkWidget-text-handle-height: 20;
+	-GtkWidget-text-handle-width: 10;
+}
 
 .background {
-  background-color: red;
+  background-color: @ButtonFace;
   color: @WindowText;
 }
 
@@ -113,6 +101,9 @@ GtkHTML {
 ************/
 
 calendar {
+	border: 3px solid;
+	border-image-source: url("../Resources/GDI32/frame_inset.png");
+	border-image-slice: 3 3 3 3;
 }
 
 /*Calendar content*/
@@ -231,19 +222,41 @@ media_playpause {
 /****************
 * stacksidebar *
 ****************/
-stacksidebar separator {
+stacksidebar separator.horizontal {
+	border: none;
+	padding: 1px;
 }
 stacksidebar list {
+	color: @HilightText;
+	background-color: @ButtonShadow;
+	border: 3px solid;
+	border-image-source: url("../Resources/GDI32/frame_inset.png");	
+	border-image-slice: 3 3 3 3;
 }
 stacksidebar.sidebar list {
 }
 stacksidebar list row {
+	background-color: @ButtonShadow;
+	padding: 2px;
 }
 stacksidebar list row label {
+}
+stacksidebar list row:hover {
+	padding: 0px;
+	margin: -1px;
+	border: 3px solid;
+	border-image-source: url("../Resources/GDI32/frame_outset_basic.png");	
+	border-image-slice: 3 3 3 3;
 }
 stacksidebar list row:selected,
 stacksidebar list row:selected:focus,
 stacksidebar list row:selected:hover {
+	padding: 0px;
+	margin: -1px;
+	border: 3px solid;
+	border-image-source: url("../Resources/GDI32/frame_inset_basic.png");	
+	border-image-slice: 3 3 3 3;
+	outline-color: transparent;
 }
 
 /***********
@@ -292,16 +305,29 @@ stack overlay box box scrolledwindow viewport list row {
 * switch *
 **********/
 switch {
+	background-color: @Window;
+	border: 2px solid;
+	border-image-source: url("../Resources/GDI32/frame_inset.png");
+	border-image-slice: 2 2 2 2;
 }
 switch:disabled {
+	background-color: @ButtonFace;
 }
 switch slider {
+	background-color: @ButtonFace;
+	border: 3px solid @ButtonDkShadow;
+	border-image: url("../Resources/GDI32/frame_outset.png");
+	border-image-slice: 3 3 3 3;
+	min-height: calc(17px - 3px - 3px);
+	min-width: calc(16px - 3px - 3px);
 }
 switch image,
 switch:disabled image,
 switch:disabled:checked image {
+	-gtk-icon-transform: scale(0);
 }
 switch:checked {
+	background-color: @Hilight;
 }
 
 /***************
@@ -358,10 +384,10 @@ headerbar .subtitle {
 **************/
 .rubberband,
 rubberband,
-.view .rubberband,
 flowbox rubberband,
 treeview.view rubberband,
-.content-view rubberband {
+.content-view rubberband,
+.content-view .rubberband {
 }
 
 /* Misc stuff */

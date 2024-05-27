@@ -1,0 +1,52 @@
+/* viewport & view */
+viewport {
+}
+viewport list,
+viewport iconview,
+viewport textview,
+viewport list.tweak-group,
+viewport list.tweak-categories {
+}
+viewport row {
+}
+viewport list {
+}
+viewport list row {
+}
+viewport list row:selected {
+}
+viewport list row box {
+	background-color: @Window;
+}
+
+grid viewport {
+	background-color: red;
+}
+grid viewport box scrolledwindow viewport {
+	background-color: red;
+}
+
+view,
+.view {
+}
+view:disabled,
+view:disabled:disabled {
+}
+view:selected,
+view:selected:focus {
+}
+.view header button {
+}
+.view header button label {
+}
+
+box.view {
+}
+
+/*scrolledwindow:not(.frame) > viewport { *//*Adding this for background colour. */
+/*  background-color: @ButtonFace; }
+dialog scrolledwindow viewport {
+padding: 5px; }*/
+
+dialog viewport {
+}

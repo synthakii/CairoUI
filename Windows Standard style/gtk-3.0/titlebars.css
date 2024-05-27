@@ -1,0 +1,36 @@
+/* Titlebars */
+.titlebar button {
+}
+.titlebar button label  {
+}
+/* The following button definitions allows us to have slim buttons on
+* headerbars with no big elements while still maintaining a good
+* looking headerbar with big elements */
+.titlebar button {
+}
+
+window.ssd.maximized headerbar,
+window.ssd.maximized .titlebar {
+	background-color: red;
+}
+
+.maximized > decoration,
+window.maximized,
+window.tiled {
+}
+
+.tiled headerbar,
+.maximized headerbar,
+.tiled .titlebar,
+.maximized .titlebar {
+	background-color: red;
+}
+
+/*headerbar.titlebar {
+  border-top: 1px solid @ButtonShadow;
+  box-shadow: inset 0px 1px @ButtonHilight;
+}*/
+paned.titlebar headerbar,
+paned.titlebar .titlebar {
+	background-color: red;
+}

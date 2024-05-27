@@ -1,0 +1,114 @@
+/* scrollbar */
+scrollbar {
+}
+scrollbar trough {
+	background-image: url("../Resources/GDI32/checkerboard.png");
+	background-repeat: repeat;
+}
+scrollbar slider {
+	background-color: @ScrollBar;
+	border: 3px solid;
+	border-image-source: url("../Resources/GDI32/frame_outset.png");
+	border-image-slice: 3 3 3 3;
+	min-height: calc(16px - 3px - 3px);
+	min-width: calc(16px - 3px - 3px);
+}
+
+scrollbar button.up,
+scrollbar button.down,
+scrollbar button.left,
+scrollbar button.right {
+	-gtk-icon-source: none;
+	border-image-source: url("../Resources/GDI32/frame_outset.png");
+	min-height: calc(16px - 3px - 3px);
+	min-width: calc(16px - 3px - 3px);
+}
+scrollbar button.up:disabled,
+scrollbar button.down:disabled,
+scrollbar button.left:disabled,
+scrollbar button.right:disabled {
+}
+scrollbar button.up:active,
+scrollbar button.down:active,
+scrollbar button.left:active,
+scrollbar button.right:active {
+	border-image-source: url("../Resources/GDI32/button_header_border_active.png");
+}
+/* Scrollbar buttons for GTK3 applications (such as Firefox or Thunderbird) using deprecated selectors */
+scrollbar .button {
+	background-color: #ff0000;
+}
+scrollbar .button:active {
+	background-color: #ff0000;
+}
+
+/* where is the junction? in scrollablewindow? Does it exists anymore? */
+scrollbar.junction,
+scrollbar .junction {
+	background-color: #ff0000;
+}
+
+/* Vertical scrollbar button icons */
+scrollbar.vertical button.up,
+scrollbar .button.vertical.top {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../Resources/Marlett/arrow_up.png");
+}
+scrollbar.vertical button.up:active,
+scrollbar .button.vertical.top:active {
+	background-image: url("../Resources/Marlett/arrow_up.png");
+	background-position: 1px 1px;
+}
+scrollbar.vertical button.up:disabled,
+scrollbar .button.vertical.top:disabled {
+	background-image: url("../Resources/Marlett/arrow_up_disabled.png");
+}
+scrollbar.vertical button.down,
+scrollbar .button.vertical.bottom {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../Resources/Marlett/arrow_down.png");
+}
+scrollbar.vertical button.down:active,
+scrollbar .button.vertical.bottom:active {
+	background-image: url("../Resources/Marlett/arrow_down.png");
+	background-position: 1px 1px;
+}
+scrollbar.vertical button.down:disabled,
+scrollbar .button.vertical.bottom:disabled {
+	background-image: url("../Resources/Marlett/arrow_down_disabled.png");
+}
+
+/* Horizontal scrollbar button icons */
+scrollbar.horizontal button.up,
+scrollbar .button.horizontal.left {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../Resources/Marlett/arrow_left.png");
+}
+scrollbar.horizontal button.up:active,
+scrollbar .button.horizontal.left:active {
+	background-image: url("../Resources/Marlett/arrow_left.png");
+	background-position: 1px 1px;
+}
+scrollbar.horizontal button.up:disabled,
+scrollbar .button.horizontal.left:disabled {
+	background-image: url("../Resources/Marlett/arrow_left_disabled.png");
+}
+scrollbar.horizontal button.down,
+scrollbar .button.horizontal.right {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../Resources/Marlett/arrow_right.png");
+}
+scrollbar.horizontal button.down:active,
+scrollbar .button.horizontal.right:active {
+	background-image: url("../Resources/Marlett/arrow_right.png");
+	background-position: 1px 1px;
+}
+scrollbar.horizontal button.down:disabled,
+scrollbar .button.horizontal.right:disabled {
+	background-image: url("../Resources/Marlett/arrow_right_disabled.png");
+}
+

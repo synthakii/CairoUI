@@ -1,0 +1,164 @@
+/* Check and Radio */
+treeview check,
+treeview radio,
+checkbutton check,
+radiobutton radio {
+	min-width: 13px;
+	min-height: 13px;
+}
+
+/* disabling focus outline because it looks bad around the whole element... */
+/*radiobutton:focus,
+checkbutton:focus {
+	outline: 0px;
+	outline: none;
+}*/
+
+/* ...instead we are going to enable it around the label */
+/* but outline doesen't work inside a label! so we use borders. */
+radiobutton label,
+checkbutton label {
+	margin-left: 4px;
+	border: 1px dotted transparent;
+}
+
+radiobutton:focus label,
+checkbutton:focus label {
+	margin-left: 4px;
+	border: 1px dotted @ButtonDkShadow;
+}
+
+checkbutton check:checked {
+	-gtk-icon-source: url("../Resources/GDI32/checkbox_checked.png");
+	background-color: @Window;
+}
+
+checkbutton check:active:not(:checked) {
+	-gtk-icon-source: url("../Resources/GDI32/checkbox_unchecked.png");
+	-gtk-icon-shadow: none;
+	background-color: @ButtonFace;
+}
+
+checkbutton check:active:checked {
+	-gtk-icon-source: url("../Resources/GDI32/checkbox_checked.png");
+	background-color: @ButtonFace;
+}
+
+checkbutton check:not(:checked) {
+	-gtk-icon-source: url("../Resources/GDI32/checkbox_unchecked.png");
+	background-color: @Window;
+}
+
+checkbutton check:indeterminate {
+	-gtk-icon-source: url("../Resources/GDI32/checkbox_indecisive.png");
+	background-color: @Window;
+}
+
+checkbutton check:indeterminate:active {
+	-gtk-icon-source: url("../Resources/GDI32/checkbox_indecisive.png");
+	background-color: @ButtonFace;
+}
+
+checkbutton check:disabled:checked {
+	-gtk-icon-source: url("../Resources/GDI32/checkbox_checked.png");
+	-gtk-icon-shadow: none;
+	background-color: @ButtonFace;
+}
+
+checkbutton check:disabled:not(:checked) {
+	-gtk-icon-source: url("../Resources/GDI32/checkbox_unchecked.png");
+	-gtk-icon-shadow: none;
+	background-color: @ButtonFace;
+}
+
+checkbutton check:indeterminate:disabled {
+	-gtk-icon-source: url("../Resources/GDI32/checkbox_indecisive_insensitive.png");
+	-gtk-icon-shadow: none;
+	background-color: @ButtonFace;
+}
+
+radiobutton radio:checked {
+	-gtk-icon-source: url("../Resources/GDI32/radio_checked.png");
+	background-color: @Window;
+}
+
+radiobutton radio:active:not(:checked) {
+	-gtk-icon-source: url("../Resources/GDI32/radio_unchecked.png");
+	-gtk-icon-shadow: none;
+	background-color: @ButtonFace;
+}
+
+radiobutton radio:active:checked {
+	-gtk-icon-source: url("../Resources/GDI32/radio_checked.png");
+	background-color: @ButtonFace;
+}
+
+radiobutton radio:not(:checked) {
+	-gtk-icon-source: url("../Resources/GDI32/radio_unchecked.png");
+	background-color: @Window;
+}
+
+radiobutton radio:indeterminate {
+	-gtk-icon-source: url("../Resources/GDI32/radio_indecisive.png");
+	background-color: @Window;
+}
+
+radiobutton radio:indeterminate:active {
+	-gtk-icon-source: url("../Resources/GDI32/radio_indecisive.png");
+	background-color: @ButtonFace;
+}
+
+radiobutton radio:disabled:checked {
+	-gtk-icon-source: url("../Resources/GDI32/radio_checked.png");
+	-gtk-icon-shadow: none;
+	background-color: @ButtonFace;
+}
+
+radiobutton radio:disabled:not(:checked) {
+	-gtk-icon-source: url("../Resources/GDI32/radio_unchecked.png");
+	-gtk-icon-shadow: none;
+	background-color: @ButtonFace;
+}
+
+radiobutton radio:indeterminate:disabled {
+	-gtk-icon-source: url("../Resources/GDI32/radio_indecisive_insensitive.png");
+	-gtk-icon-shadow: none;
+	background-color: @ButtonFace;
+}
+
+/* Treeview Checks/Radio */
+treeview check:checked,
+treeview check:active:checked,
+treeview check:disabled:checked {
+	-gtk-icon-source: url("../Resources/GDI32/checkbox_checked_treeview.png");
+}
+
+treeview check:indeterminate,
+treeview check:indeterminate:active,
+treeview check:indeterminate:disabled {
+	-gtk-icon-source: url("../Resources/GDI32/checkbox_indecisive_treeview.png");
+}
+
+treeview check:not(:checked),
+treeview check:active:not(:checked),
+treeview check:disabled:not(:checked) {
+	-gtk-icon-source: url("../Resources/GDI32/checkbox_unchecked_treeview.png");
+}
+
+treeview radio:checked,
+treeview radio:active:checked,
+treeview radio:disabled:checked {
+	-gtk-icon-source: url("../Resources/GDI32/radio_checked_treeview.png");
+}
+
+treeview radio:indeterminate,
+treeview radio:indeterminate:active,
+treeview radio:indeterminate:disabled {
+	-gtk-icon-source: url("../Resources/GDI32/radio_indecisive_treeview.png");
+}
+
+treeview radio:not(:checked),
+treeview radio:active:not(:checked),
+treeview radio:disabled:not(:checked) {
+	-gtk-icon-source: url("../Resources/GDI32/radio_unchecked_treeview.png");
+}

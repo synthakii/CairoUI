@@ -55,6 +55,18 @@
 @define-color LightCyan		rgb(84, 252, 252);
 @define-color LightWhite	rgb(252, 252, 252);
 
+/* Animations*/
+@keyframes menu_slide_corner {
+	from {
+		margin-bottom: -100px;
+		margin-right: -100px;
+	}
+	to {
+		margin-bottom: 0px;
+		margin-right: 0px;
+	}
+}
+
 /* Please keep these in their original load order. */
 @import	url("widgets.css");
 @import url("buttons.css");
@@ -68,7 +80,7 @@
 @import url("treeviews.css");
 @import url("entry.css");
 @import url("combobox.css");
-@import url("scrollbar.css");
+@import url("scrollbars.css");
 @import url("assistant.css");
 @import url("headerbars.css");
 @import url("menu.css");

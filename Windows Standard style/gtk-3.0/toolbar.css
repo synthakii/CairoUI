@@ -1,0 +1,32 @@
+/* toolbar */
+toolbar {
+	-GtkWidget-window-dragging: true;
+	margin-top: 1px;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	padding-left: 6px;
+	padding-right: 6px;
+	border-top: 1px solid @ButtonShadow;
+	box-shadow: inset 0px 1px @ButtonHilight;
+	color: @ButtonText;
+}
+toolbar.horizontal > separator {
+	margin-top: -3px;
+	margin-bottom: -2px;
+	margin-left: 6px;
+	margin-right: 6px;
+	border-left: 1px solid @ButtonShadow;
+	border-right: 1px solid @ButtonHilight;
+}
+toolbar.vertical > separator {
+	border-top: 1px solid @ButtonShadow;
+	border-bottom: 1px solid @ButtonHilight;
+}
+
+toolitem entry {
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+frame toolbar {
+}

@@ -1,0 +1,19 @@
+/* entry */
+entry {
+  color: @WindowText;
+  background-color: @Window;
+  border: 3px solid;
+  border-image-source: url("../Resources/GDI32/frame_inset.png");
+  border-image-slice: 3 3 3 3;
+  padding-bottom: 1px;
+
+}
+entry selection {
+	background-color: @Hilight;
+	color: @HilightText;
+}
+entry:disabled {
+	background-color: @ButtonFace;
+}
+entry image {
+}

@@ -1,0 +1,225 @@
+/* menu */
+menu,
+.menu,
+.context-menu {
+	background-color: @Menu;
+	color: @MenuText;
+	padding: 3px;
+	border: 3px solid;
+	border-image: url("../Resources/GDI32/frame_outset.png");
+	border-image-slice: 3 3 3 3;
+}
+
+/* NOTE: Menu border styling is moved to client side decorations. See gtk-window.css for menu border styling. */
+menu {
+}
+menu menuitem {
+	padding-left: 21px;
+	padding-right: 16px;
+	min-height: 17px;
+}
+menuitem accelerator {
+}
+menu menuitem label {
+	margin-top: -1px;
+	margin-bottom: 1px;
+	padding-right: 8px;
+}
+menu menuitem image {
+	-gtk-icon-transform: translateX(-15px) translateY(0px);
+	padding-top: 1px;
+	padding-bottom: 2px;
+	margin-right: -14px
+}
+menuitem:active,
+menuitem:hover {
+	background-color: @Hilight;
+	color: @HilightText;
+}
+
+menu menuitem radio,
+menu menuitem check {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 10px;
+	min-height: 10px;
+	min-width: 10px;
+	margin-left: -21px;
+	margin-right: -19px;
+}
+menu menuitem radio:disabled:not(:checked),
+menu menuitem check:disabled:not(:checked),
+menu menuitem radio:not(:checked),
+menu menuitem check:not(:checked) {
+	background-image: url("");
+}
+
+menu menuitem radio:checked,
+menu menuitem radio:indeterminate {
+	background-image: url("../Resources/Marlett/menu_radio_checked.png");
+	margin-right: 1px;
+}
+menu menuitem check:indeterminate,
+menu menuitem check:checked {
+	background-image: url("../Resources/Marlett/menu_checkbox_checked.png");
+	margin-right: 1px;
+}
+menu menuitem:active > radio:checked,
+menu menuitem:hover > radio:checked {
+	background-image: url("../Resources/Marlett/menu_radio_checked_selected.png");
+}
+menu menuitem:active > check:checked,
+menu menuitem:hover > check:checked {
+	background-image: url("../Resources/Marlett/menu_checkbox_checked_selected.png");
+}
+menu menuitem radio:indeterminate:disabled,
+menu menuitem radio:disabled:checked {
+	background-image: url("../Resources/Marlett/menu_radio_checked_insensitive.png");
+}
+menu menuitem check:indeterminate:disabled,
+menu menuitem check:disabled:checked {
+	background-image: url("../Resources/Marlett/menu_checkbox_checked_insensitive.png");
+}
+
+/* menubar */
+menubar,
+.menubar {
+	background-color: @Menu;
+	color: @MenuText;
+}
+menubar label {
+}
+
+menu separator {
+	margin-top: 3px;
+	margin-bottom: 4px;
+	margin-left: 1px;
+	margin-right: 1px;
+	border-top: 1px solid @ButtonShadow;
+	border-bottom: 1px solid @ButtonHilight;
+}
+
+menubar > menuitem > label {
+	padding-top: 1px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 7px;
+}
+
+menubar > menuitem {
+	border: 1px solid;
+	border-image-source: url("");
+	border-image-slice: 1 1 1 1;
+}
+
+menubar > menuitem:hover {
+	color: @MenuText;
+	background-color: transparent;
+	border-image-source: url("../Resources/GDI32/frame_basic.png");
+}
+
+menubar > menuitem:hover > label {
+	color: transparent;
+	text-shadow: 1px 1px @MenuText;
+}
+
+/* Menu arrows */
+menu arrow {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 10px;
+	min-height: 10px;
+	min-width: 10px;
+	margin-right: -16px;
+}
+menu :hover > arrow {
+}
+
+menu arrow.right {
+	background-image: url("../Resources/Marlett/arrow_right.png");
+}
+menu :hover > arrow.right {
+	background-image: url("../Resources/Marlett/arrow_right_selected.png");
+}
+menu :checked > arrow.right,
+menu :disabled > arrow.right {
+	background-image: url("../Resources/Marlett/arrow_right_disabled.png");
+}
+
+menu arrow.left {
+	background-image: url("../Resources/Marlett/arrow_left.png");
+}
+menu :hover > arrow.left {
+	background-image: url("../Resources/Marlett/arrow_left_selected.png");
+}
+menu :checked > arrow.left,
+menu :disabled > arrow.left {
+	background-image: url("../Resources/Marlett/arrow_left_disabled.png");
+}
+
+menu arrow.up {
+	background-image: url("../Resources/Marlett/arrow_up.png");
+}
+menu :hover > arrow.up {
+	background-image: url("../Resources/Marlett/arrow_up_selected.png");
+}
+menu :checked > arrow.up
+menu :disabled > arrow.up {
+	background-image: url("../Resources/Marlett/arrow_up_disabled.png");
+}
+
+menu arrow.down {
+	background-image: url("../Resources/Marlett/arrow_down.png");
+}
+menu :hover > arrow.down {
+	background-image: url("../Resources/Marlett/arrow_down_selected.png");
+}
+menu :checked > arrow.down,
+menu :disabled > arrow.down {
+	background-image: url("../Resources/Marlett/arrow_down_disabled.png");
+}
+
+/* Directional menu arrow styling */
+/* Top arrow */
+menu > arrow.top,
+.menu > arrow.top,
+.context-menu > arrow.top {
+	background-color: #ff0000;
+}
+menu > arrow.top:hover,
+.menu > arrow.top:hover,
+.context-menu > arrow.top:hover {
+	background-color: #ff0000;
+}
+menu > arrow.top:disabled,
+.menu > arrow.top:disabled,
+.context-menu > arrow.top:disabled {
+	background-color: #ff0000;
+}
+menu > arrow.top:checked,
+.menu > arrow.top:checked,
+.context-menu > arrow.top:checked {
+	background-color: #ff0000;
+}
+
+/* Bottom arrow */
+menu > arrow.bottom,
+.menu > arrow.bottom,
+.context-menu > arrow.bottom {
+	background-color: #ff0000;
+}
+menu > arrow.bottom:hover,
+.menu > arrow.bottom:hover,
+.context-menu > arrow.bottom:hover {
+	background-color: #ff0000;
+}
+menu > arrow.bottom:disabled,
+.menu > arrow.bottom:disabled,
+.context-menu > arrow.bottom:disabled {
+	background-color: #ff0000;
+}
+menu > arrow.bottom:checked,
+.menu > arrow.bottom:checked,
+.context-menu > arrow.bottom:checked {
+	background-color: #ff0000;
+}

@@ -1,0 +1,27 @@
+/* Message Dialog */
+messagedialog .dialog-vbox {
+}
+
+messagedialog .dialog-vbox > box.horizontal image {
+	/*margin-top: -4px;
+	margin-left: -6px;
+	-gtk-icon-transform: scale(0.66);*/
+}
+
+messagedialog .dialog-action-box  {
+	/*margin-bottom: -2px;*/
+}
+
+/*messagedialog .titlebar {
+  border: 1px solid;
+  border-radius: 0px;
+  border-top-color: @ButtonLight;
+  border-right-color: @ButtonDkShadow;
+  border-left-color: @ButtonLight;
+  border-bottom-color: @ButtonFace;
+  box-shadow: inset 1px 1px @ButtonHilight, inset -1px 0px @ButtonShadow; }
+messagedialog .dialog-vbox {
+  border-bottom: 1px solid @ButtonDkShadow;
+  border-left: 1px solid @ButtonLight;
+  border-right: 1px solid @ButtonDkShadow;
+  box-shadow: inset 1px 0px @ButtonHilight, inset -1px -1px @ButtonShadow; }*/

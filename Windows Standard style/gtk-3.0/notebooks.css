@@ -1,0 +1,172 @@
+/* Notebooks */
+notebook {
+}
+notebook > stack:not(:only-child) {
+	border: 3px solid;
+	border-image-source: url("../Resources/GDI32/button_border.png");
+	border-image-slice: 3 3 3 3;
+}
+notebook.frame {
+	padding-top: 2px;
+	margin-top: -1px;
+	padding-left: 2px;
+}
+
+/* header tab positioning */
+notebook > header {
+}
+notebook > header.top,
+notebook > header.bottom,
+notebook.frame > header.top,
+notebook.frame > header.bottom {
+}
+notebook > header.left,
+notebook > header.right,
+notebook.frame > header.left,
+notebook.frame > header.right {
+}
+
+/* tab styling */
+notebook tab {
+	color: @ButtonText;
+}
+notebook tab:hover {
+}
+notebook tab:hover label {
+}
+notebook tab:checked {
+}
+notebook tab:checked label {
+}
+notebook tab label {
+}
+notebook tabs > arrow {
+}
+notebook tabs > arrow:hover {
+}
+
+/* Top tabs */
+notebook > header.top > tabs > tab {
+	border: 3px solid;
+	border-image-source: url("../Resources/GDI32/notebook_tab_border_top.png");
+	border-image-slice: 3 3 3 3;
+}
+notebook > header.top > tabs > tab:first-child,
+notebook > header.top > tabs > tab.reorderable-page:first-child {
+	margin-left: 2px;
+}
+notebook > header.top > tabs > tab:last-child,
+notebook > header.top > tabs > tab.reorderable-page:last-child {
+	margin-right: 2px;
+}
+notebook > header.top > tabs > tab label {
+	padding-left: 3px;
+	padding-right: 6px;
+	margin-bottom: -1px;
+}
+
+notebook > header.top > tabs > tab:checked {
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-left: -2px;
+	margin-right: -2px;
+	margin-top: -2px;
+	margin-bottom: -2px;
+	border-image-source: url("../Resources/GDI32/notebook_tab_border_top_center_checked.png");
+	border-image-slice: 3 3 3 3;
+}
+notebook > header.top > tabs > tab:first-child:checked,
+notebook > header.top > tabs > tab.reorderable-page:first-child:checked {
+	margin-left: 0px;
+	border-image-source: url("../Resources/GDI32/notebook_tab_border_top_left_checked.png");
+}
+notebook > header.top > tabs > tab:last-child:checked,
+notebook > header.top > tabs > tab.reorderable-page:last-child:checked {
+	margin-right: 0px;
+}
+notebook > header.top > tabs > tab:checked label {
+	padding-bottom: 3px;
+}
+notebook > header.top > tabs > arrow {
+}
+notebook > header.top > tabs > arrow.up {
+}
+notebook > header.top > tabs > arrow.up:hover {
+}
+notebook > header.top > tabs > arrow.up:disabled {
+}
+notebook > header.top > tabs > arrow.down {
+}
+notebook > header.top > tabs > arrow.down:hover {
+}
+notebook > header.top > tabs > arrow.down:disabled {
+}
+
+/* Bottom tabs */
+notebook > header.bottom > tabs > tab {
+}
+notebook > header.bottom > tabs > tab label {
+}
+notebook > header.bottom > tabs > tab:checked {
+}
+notebook > header.bottom > tabs > tab:checked label {
+notebook > header.bottom > tabs > arrow {
+}
+notebook > header.bottom > tabs > arrow.up {
+}
+notebook > header.bottom > tabs > arrow.up:hover {
+}
+notebook > header.bottom > tabs > arrow.up:disabled {
+}
+notebook > header.bottom > tabs > arrow.down {
+}
+notebook > header.bottom > tabs > arrow.down:hover {
+}
+notebook > header.bottom > tabs > arrow.down:disabled {
+}
+
+/* Right tabs */
+notebook > header.right > tabs > tab {
+}
+notebook > header.right > tabs > tab:checked {
+}
+notebook > header.right > tabs > tab:checked label {
+}
+notebook > header.right > tabs > arrow.up {
+}
+notebook > header.right > tabs > arrow.up:hover {
+}
+notebook > header.right > tabs > arrow.up:disabled {
+}
+notebook > header.right > tabs > arrow.down {
+}
+notebook > header.right > tabs > arrow.down:hover {
+}
+notebook > header.right > tabs > arrow.down:disabled {
+}
+
+/* Left tabs */
+notebook > header.left > tabs > tab {
+}
+notebook > header.left > tabs > tab:checked {
+}
+notebook > header.left > tabs > tab:checked label {
+}
+notebook > header.left > tabs > arrow.up {
+}
+notebook > header.left > tabs > arrow.up:hover {
+}
+notebook > header.left > tabs > arrow.up:disabled {
+}
+notebook > header.left > tabs > arrow.down {
+}
+notebook > header.left > tabs > arrow.down:hover {
+}
+notebook > header.left > tabs > arrow.down:disabled {
+}
+
+tabs arrow.down {
+}
+
+tabs arrow.up {
+}

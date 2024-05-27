@@ -1,0 +1,18 @@
+/* scrolled window */
+scrolledwindow {
+}
+scrolledwindow viewport list row {
+}
+
+stacksidebar > scrolledwindow { 
+}
+
+.sidebar GtkScrolledWindow {
+	background-color: red;
+}
+
+frame > scrolledwindow {
+}
+
+notebook stack scrolledwindow {
+}

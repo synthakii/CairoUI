@@ -1,0 +1,292 @@
+/* progressbar, levelbar and scale */
+levelbar,
+progressbar {
+}
+
+levelbar trough,
+progressbar trough {
+	background-color: @ButtonFace;
+	border: 1px solid;
+	border-image-source: url("../Resources/GDI32/frame_basic.png");
+	border-image-slice: 1 1 1 1;
+	padding: 1px;
+}
+
+levelbar.horizontal trough,
+progressbar.horizontal trough,
+progressbar.horizontal progress {
+	min-height: 11px;
+}
+
+levelbar.vertical trough,
+progressbar.vertical trough,
+progressbar.vertical progress {
+	min-width: 11px;
+}
+levelbar.vertical.discrete block {
+	margin-bottom: 2px;
+	background-color: @Hilight;
+}
+levelbar.vertical.discrete block:last-child {
+	margin-bottom: 0px;
+	background-color: @Hilight;
+}
+levelbar.horizontal.discrete block {
+	margin-right: 2px;
+	background-color: @Hilight;
+}
+levelbar.horizontal.discrete block:last-child {
+	margin-right: 0px;
+	background-color: @Hilight;
+}
+levelbar block {
+	background-color: @Hilight;
+}
+levelbar block.empty {
+}
+levelbar block.empty {
+
+}
+
+progressbar progress {
+	background-color: @Hilight;
+}
+progressbar.vertical progress {
+	background-color: @Hilight;
+}
+
+scale.vertical {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 10px;
+	padding-right: 9px;
+}
+
+scale.vertical indicator {
+	color: @ButtonText;
+}
+
+scale.vertical slider {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 1px 50%;
+	background-image: url("../Resources/GDI32/scale_vert_slider.png");
+	margin: 0px -12px 0px -12px;
+	min-height: 11px;
+	min-width: 21px;
+}
+
+scale.vertical slider:active {
+	background-image: url("../Resources/GDI32/scale_vert_slider_active.png");
+}
+
+scale.vertical slider:disabled {
+	background-image: url("../Resources/GDI32/scale_vert_slider_active.png");
+}
+
+scale.vertical.marks-after indicator {
+	padding-left: 11px;
+	margin-right: -8px;
+	min-height: 1px;
+	min-width: 2px;
+}
+
+scale.vertical.marks-before indicator {
+	padding-right: 11px;
+	margin-left: -8px;
+	min-height: 1px;
+	min-width: 2px;
+}
+
+scale.vertical.marks-after label {
+	margin-left: 9px;
+}
+
+
+scale.vertical.marks-before label {
+	margin-right: 9px;
+}
+
+
+scale.vertical.marks-after mark:first-child indicator,
+scale.vertical.marks-after mark:last-child indicator {
+	min-height: 1px;
+	min-width: 3px;	
+}
+scale.vertical.marks-before mark:first-child indicator,
+scale.vertical.marks-before mark:last-child indicator {
+	min-height: 1px;
+	min-width: 3px;	
+}
+
+scale.vertical.marks-after,
+scale.vertical.marks-before {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 8px;
+	padding-right: 9px;
+}
+
+scale.vertical.marks-after slider {
+	background-position: 3px 50%;
+	background-image: url("../Resources/GDI32/scale_vert_right_slider_arrow.png");
+}
+
+scale.vertical.marks-after slider:active {
+	background-image: url("../Resources/GDI32/scale_vert_right_slider_arrow_active.png");
+}
+
+scale.vertical.marks-after slider:disabled {
+	background-image: url("../Resources/GDI32/scale_vert_right_slider_arrow_active.png");
+}
+
+scale.vertical.marks-before slider {
+	background-image: url("../Resources/GDI32/scale_vert_left_slider_arrow.png");
+
+}
+
+scale.vertical.marks-before slider:active {
+	background-image: url("../Resources/GDI32/scale_vert_left_slider_arrow_active.png");
+
+}
+
+scale.vertical.marks-before slider:disabled {
+	background-image: url("../Resources/GDI32/scale_vert_left_slider_arrow_active.png");
+
+}
+
+scale.horizontal {
+	padding-top: 9px;
+	padding-bottom: 10px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+scale.horizontal indicator {
+	color: @ButtonText;
+}
+
+scale.horizontal slider {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 2px;
+	background-image: url("../Resources/GDI32/scale_horz_slider.png");
+	margin: -12px 0px -12px 0px;
+	min-height: 21px;
+	min-width: 11px;
+}
+
+scale.horizontal slider:active {
+	background-image: url("../Resources/GDI32/scale_horz_slider_active.png");
+}
+
+scale.horizontal slider:disabled {
+	background-image: url("../Resources/GDI32/scale_horz_slider_active.png");
+}
+
+scale.horizontal.marks-after indicator {
+	padding-top: 11px;
+	margin-bottom: -10px;
+	min-height: 2px;
+	min-width: 1px;
+}
+
+scale.horizontal.marks-before indicator {
+	padding-bottom: 9px;
+	margin-top: -10px;
+	min-height: 2px;
+	min-width: 1px;
+}
+
+scale.horizontal.marks-after label {
+	margin-top: 10px;
+}
+
+scale.horizontal.marks-before label {
+	margin-bottom: 9px;
+}
+
+scale.horizontal.marks-after mark:first-child indicator,
+scale.horizontal.marks-before mark:first-child indicator,
+scale.horizontal.marks-after mark:last-child indicator,
+scale.horizontal.marks-before mark:last-child indicator {
+	min-height: 3px;
+	min-width: 1px;
+}
+
+scale.horizontal.marks-after,
+scale.horizontal.marks-before {
+	padding-top: 8px;
+	padding-bottom: 11px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+scale.horizontal.marks-after slider {
+	background-position: 50% 3px;
+	background-image: url("../Resources/GDI32/scale_horz_down_slider_arrow.png");
+}
+scale.horizontal.marks-before slider {
+	background-position: 50% 3px;
+	background-image: url("../Resources/GDI32/scale_horz_up_slider_arrow.png");
+}
+
+scale.horizontal.marks-after slider:active {
+	background-image: url("../Resources/GDI32/scale_horz_down_slider_arrow_active.png");
+
+}
+scale.horizontal.marks-before slider:active {
+	background-image: url("../Resources/GDI32/scale_horz_up_slider_arrow_active.png");
+}
+
+scale.horizontal.marks-after slider:disabled {
+	background-image: url("../Resources/GDI32/scale_horz_down_slider_arrow_active.png");
+
+}
+scale.horizontal.marks-before slider:disabled {
+	background-image: url("../Resources/GDI32/scale_horz_up_slider_arrow_active.png");
+}
+
+scale trough {
+	border: 2px solid;
+	border-image: url("../Resources/GDI32/frame_inset.png");
+	border-image-slice: 2 2 2 2;
+}
+scale:focus trough {
+	background-color: red;
+}
+
+scale highlight,
+scale empty {
+	background-color: red;
+}
+
+/* there might be other cases where the inside is filled by other widgets */
+scale.color contents trough {
+	background-color: red;
+}
+scale value {
+}
+
+treeview.view.progressbar {
+	background-color: @Hilight;
+}
+treeview.view.progressbar:disabled {
+}
+treeview.view.progressbar:disabled:selected:focus:backdrop,
+treeview.view.progressbar:disabled:selected:backdrop {
+}
+treeview.view.progressbar:selected:focus:backdrop,
+treeview.view.progressbar:selected:backdrop {
+}
+
+treeview.view.trough {
+	background-color: @ButtonFace;
+	border: 1px solid;
+	border-image-source: url("../Resources/GDI32/frame_basic.png");
+	border-image-slice: 1 1 1 1;
+	padding: 2px;
+}
+treeview.view.trough:selected:focus,
+treeview.view.trough:selected {
+}

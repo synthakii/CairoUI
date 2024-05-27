@@ -1,0 +1,49 @@
+combobox {
+	color: @WindowText;
+	background-color: @Window;
+	border: 2px solid;
+	border-image: url("../Resources/GDI32/frame_inset.png");
+	border-image-slice: 2 2 2 2;
+}
+combobox cellview {
+}
+combobox:drop(active) {
+}
+combobox button.combo:last-child {
+	color: @WindowText;
+	border: none;
+	background-color: transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-image: url("../Resources/GDI32/combobox_button_normal.png");
+	min-height: 17px;
+	min-width: 16px;
+}
+combobox button.combo:last-child:checked {
+	background-image: url("../Resources/GDI32/combobox_button_active.png");
+}
+combobox button.combo:last-child:disabled {
+	background-color: @ButtonFace;
+	background-image: url("../Resources/GDI32/combobox_button_insense.png");
+}
+combobox entry {
+	border: none;
+}
+combobox entry.combo {
+	padding: 0px;
+	color: @WindowText;
+}
+/* Combobox window and menu decorations */
+#gtk-combobox-popup-menu,
+#gtk-combobox-popup-menu window {
+	background-color: @Window;
+	border: 1px solid @ButtonDkShadow;
+	padding: 1px;
+}
+#gtk-combobox-popup-menu menuitem {
+	margin-left: -21px;
+}
+#gtk-combobox-popup-menu arrow  {
+	-gtk-icon-source: none;
+}

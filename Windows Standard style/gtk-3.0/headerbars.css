@@ -1,0 +1,25 @@
+/* Headerbars */
+headerbar,
+.titlebar {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 1px;
+	padding-right: 2px;
+	background-image: linear-gradient(to right, @ActiveTitle, @GradientActiveTitle);
+}
+headerbar entry {
+	background-color: #ff0000;
+}
+headerbar button {
+	
+}
+headerbar separator.titlebutton.vertical {
+	padding: 0px;
+	border: none;
+}
+headerbar scale {
+	background-color: #ff0000;
+}
+headerbar .titlebutton * {
+	background-color: #ff0000;
+}

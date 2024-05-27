@@ -1,0 +1,53 @@
+/* treeview */
+treeview {
+	-GtkTreeView-horizontal-separator: 0;
+}
+
+/* outline effects in treeviews are causing issues with the interface expanding on focus and strange graphical artifacts that will stay around. */
+treeview {
+}
+
+treeview.dnd {
+}
+
+/* treeview misbehaves if we only define selection/focus globally, so we’ll specify it here. */
+treeview:selected,
+treeview:selected:focus {
+	background-color: @Hilight;
+	color: @HilightText;
+}
+
+scrolledwindow treeview check,
+scrolledwindow treeview radio,
+scrolledwindow treeview check:checked,
+scrolledwindow treeview radio:checked {
+}
+
+treeview entry {
+}
+
+/* This creates the treeview border path for expanded items. */
+treeview.view {
+	border-color: @ButtonShadow;
+	background-color: @Window;
+}
+treeview.view:selected {
+	background-color: @Hilight;
+}
+
+/* Hey Windows95 didn't have arrows in the headerbar either! */
+treeview.view image {
+}
+
+/* Have to specify this or else bad things happen! */
+treeview.view.separator {
+}
+
+treeview.view.expander,
+treeview.view.expander:selected {
+	-gtk-icon-source: url("../Resources/GDI32/treeview_expander_expand.png");
+}
+treeview.view.expander:checked,
+treeview.view.expander:checked:selected {
+	-gtk-icon-source: url("../Resources/GDI32/treeview_expander_collapse.png");
+}

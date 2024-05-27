@@ -1,0 +1,10 @@
+/* Assistant */
+assistant .sidebar {
+	background-color: #ff0000;
+}
+assistant .sidebar label {
+	background-color: #ff0000;
+}
+assistant .sidebar label.highlight {
+	background-color: #ff0000;
+}

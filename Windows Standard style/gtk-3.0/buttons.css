@@ -1,57 +1,99 @@
 /* Basic buttons */
 button {
-	border: 3px solid @ButtonDkShadow;
+	border: 3px solid;
 	border-image-source: url("../Resources/GDI32/button_border.png");
 	border-image-slice: 3 3 3 3;
 	color: @ButtonText;
 	background-color: @ButtonFace;
 	outline-offset: -5px;
+
 }
 button:focus {
 	border-image-source: url("../Resources/GDI32/button_border_focus.png");
-	border-image-slice: 3 3 3 3;
 }
 button:disabled {
 	border-image-source: url("../Resources/GDI32/button_border.png");
-	border-image-slice: 3 3 3 3;
 }
 button:active,
 button:checked,
 button:disabled:active,
-button:disabled:checked{
+button:disabled:checked {
 	border-image-source: url("../Resources/GDI32/button_border_active.png");
-	border-image-slice: 3 3 3 3;
+}
+
+button:active label,
+button:checked label,
+button:disabled:active label,
+button:disabled:checked label {
+	color: transparent;
+	text-shadow: 1px 1px @ButtonText;
+}
+
+button:active image,
+button:checked image,
+button:disabled:active image,
+button:disabled:checked image {
+	-gtk-icon-transform: translateX(1px) translateY(1px);
 }
 
 /* Toggle buttons */
 button.toggle {
 	border-image-source: url("../Resources/GDI32/button_border.png");
-	border-image-slice: 3 3 3 3;
 }
 button.toggle:focus {
 	border-image-source: url("../Resources/GDI32/button_border_focus.png");
-	border-image-slice: 3 3 3 3;
 }
 button.toggle:active {
 	border-image-source: url("../Resources/GDI32/button_border_indent.png");
-	border-image-slice: 3 3 3 3;
 }
 button.toggle:disabled {
 	border-image-source: url("../Resources/GDI32/button_border.png");
-	border-image-slice: 3 3 3 3;
 }
 button.toggle:checked,
 button.toggle:disabled:active,
 button.toggle:disabled:checked {
 	border-image-source: url("../Resources/GDI32/button_border_toggle.png");
-	border-image-slice: 3 3 3 3;
 	background-image: url("../Resources/GDI32/checkerboard.png");
 	background-repeat: repeat;
+}
+
+/* Flat buttons */
+button.flat {
+	border-image-source: url("");
+}
+button.flat:disabled {
+	border-image-source: url("");
+}
+button.flat:hover {
+	border-image-source: url("../Resources/GDI32/button_border_sidebar.png");
+}
+button.flat:active {
+	border-image-source: url("../Resources/GDI32/frame_basic.png");
+}
+button.flat:checked {
+	padding: 1px;
+	border-image-source: url("../Resources/GDI32/frame_basic.png");
+	border-image-slice: 2 2 2 2;
+	background-image: url("../Resources/GDI32/checkerboard.png");
+	background-repeat: repeat;
+}
+button.flat.popup:checked {
+	padding: 0px;
+	border-image-slice: 3 3 3 3;
+	background-image: url("");
 }
 
 /* Dialogue buttons. */
 /* We're using border images here since dialog button borders are 3px on Windows 95 with individual colour properties.*/
 .dialog-action-area button {
+	/*margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 5px;
+	margin-right: 5px;*/
+}
+
+.dialog-action-area button label {
+	/*padding-top: 1px;*/
 }
 .dialog-action-area button:focus {
 }
@@ -63,39 +105,61 @@ button.toggle:disabled:checked {
 .dialog-action-area button:disabled:checked {
 }
 
-/* Toolbar buttons */
+/* Toolbar buttons Flat
+.inline-toolbar button.flat,
+.primary-toolbar button.flat,
+.path-bar button.flat,
+toolbutton button.flat,
+toolbutton .flat.toggle {
+	border-image-source: url("");
+}
+.inline-toolbar button.flat:disabled,
+.primary-toolbar button.flat:disabled,
+.path-bar button.flat:disabled,
+toolbutton button.flat:disabled,
+toolbutton .flat.toggle:disabled {
+	border-image-source: url("");
+}
+.inline-toolbar button.flat:hover,
+.primary-toolbar button.flat:hover,
+.path-bar button.flat:hover,
+toolbutton button.flat:hover
+toolbutton .flat.toggle:hover {
+	border-image-source: url("../Resources/GDI32/button_border_sidebar.png");
+}
+.inline-toolbar button.flat:active,
+.primary-toolbar button.flat:active,
+.path-bar button.flat:active,
+toolbutton button.flat:active,
+toolbutton .flat.toggle:active {
+	border-image-source: url("../Resources/GDI32/frame_basic.png");
+}
+.inline-toolbar button.flat:checked,
+.primary-toolbar button.flat:checked,
+.path-bar button.flat:checked,
+toolbutton button.flat:checked,
+toolbutton .flat.toggle:checked:disabled {
+	padding: 1px;
+	border-image-source: url("../Resources/GDI32/frame_basic.png");
+	border-image-slice: 2 2 2 2;
+	background-image: url("../Resources/GDI32/checkerboard.png");
+	background-repeat: repeat;
+}
+
+Toolbar buttons 3D
 .inline-toolbar button,
 .primary-toolbar button,
 .path-bar button,
 toolbutton button,
 toolbutton .toggle {
-	border: 3px solid @ButtonDkShadow;
-	border-image-source: url("");
-	border-image-slice: 3 3 3 3;
-}
-.inline-toolbar button:disabled,
-.primary-toolbar button:disabled,
-.path-bar button:disabled,
-toolbutton button:disabled,
-toolbutton .toggle:disabled {
-	border-image-source: url("");
-	border-image-slice: 3 3 3 3;
-}
-.inline-toolbar button:hover,
-.primary-toolbar button:hover,
-.path-bar button:hover,
-toolbutton button:hover
-toolbutton .toggle:hover {
-	border-image-source: url("../Resources/GDI32/button_sidebar.png");
-	border-image-slice: 3 3 3 3;
+	border-image-source: url("../Resources/GDI32/button_border.png");
 }
 .inline-toolbar button:active,
 .primary-toolbar button:active,
 .path-bar button:active,
 toolbutton button:active,
 toolbutton .toggle:active {
-	border-image-source: url("../Resources/GDI32/frame_basic.png");
-	border-image-slice: 3 3 3 3;
+	border-image-source: url("../Resources/GDI32/button_border_indent.png");
 }
 .inline-toolbar button:checked,
 .primary-toolbar button:checked,
@@ -103,11 +167,12 @@ toolbutton .toggle:active {
 toolbutton button:checked,
 toolbutton .toggle:checked:disabled {
 	padding: 1px;
-	border-image-source: url("../Resources/GDI32/frame_basic.png");
+	border-image-source: url("../Resources/GDI32/button_border_indent.png");
 	border-image-slice: 2 2 2 2;
 	background-image: url("../Resources/GDI32/checkerboard.png");
 	background-repeat: repeat;
 }
+*/
 
 /* Sidebar buttons */
 button.sidebar-button {
@@ -129,7 +194,6 @@ row:selected button:selected {
 }
 .stack-switcher > button:checked {
 	border-image-source: url("../Resources/GDI32/button_border_indent.png");
-	border-image-slice: 3 3 3 3;
 }
 .stack-switcher > button > label {
 }
@@ -148,10 +212,9 @@ row:selected button:selected {
 button.color {
 	/*padding: 2px;*/
 	border-image-source: url("../Resources/GDI32/button_border.png");
-	border-image-slice: 3 3 3 3;
 }
 button.color colorswatch {
-	border: 1px solid @WindowFrame;
+	border: 1px solid @ButtonText;
 }
 button.color colorswatch:only-child {
 
@@ -166,44 +229,42 @@ button.color colorswatch:only-child:disabled colorswatch:only-child, button.colo
 /* spinbuttons */
 spinbutton:not(.vertical) {
 	background-color: @Window;
-	border: 3px solid @ButtonDkShadow;
-	border-image-source: url("../Resources/GDI32/frame_scrolledwindow.png");
-	border-image-slice: 3 3 3 3;
+	border: 2px solid;
+	border-image-source: url("../Resources/GDI32/frame_inset.png");
+	border-image-slice: 2 2 2 2;
 }
 	
 spinbutton:not(.vertical) entry {
+	border-image-source: url("");
 }
 spinbutton:not(.vertical) button.up {
 }
 spinbutton:not(.vertical) button.up:active {
 	border-image-source: url("../Resources/GDI32/button_border_indent.png");
-	border-image-slice: 3 3 3 3;
 }
 spinbutton:not(.vertical) button.down {
 }
 spinbutton:not(.vertical) button.down:active {
 	border-image-source: url("../Resources/GDI32/button_border_indent.png");
-	border-image-slice: 3 3 3 3;
 }
 spinbutton.vertical button.up {
 }
 spinbutton.vertical button.up:active {
 	border-image-source: url("../Resources/GDI32/button_border_indent.png");
-	border-image-slice: 3 3 3 3;
 }
 spinbutton.vertical button.down {
 }
 spinbutton.vertical button.down:active {
 	border-image-source: url("../Resources/GDI32/button_border_indent.png");
-	border-image-slice: 3 3 3 3;
 }
 spinbutton.vertical {
 	background-color: @Window;
-	border: 3px solid @ButtonDkShadow;
-	border-image-source: url("../Resources/GDI32/frame_scrolledwindow.png");
-	border-image-slice: 3 3 3 3;
+	border: 2px solid;
+	border-image-source: url("../Resources/GDI32/frame_inset.png");
+	border-image-slice: 2 2 2 2;
 }
 spinbutton.vertical entry {
+	border-image-source: url("");
 }
 spinbutton.vertical button {
 }
@@ -222,21 +283,13 @@ toolitem button {
 
 /* image buttons */
 .image-button {
-	border-image-source: url("");
-	border-image-slice: 3 3 3 3;
-}
-.image-button:hover {
-	border-image-source: url("../Resources/GDI32/button_sidebar.png");
-	border-image-slice: 3 3 3 3;
 }
 .image-button:active {
-	border-image-source: url("../Resources/GDI32/frame_basic.png");
-	border-image-slice: 3 3 3 3;
 }
 .image-button:checked {
 	padding: 1px;
-	border: 2px solid @ButtonDkShadow;
-	border-image-source: url("../Resources/GDI32/frame_basic.png");
+	border: 2px solid;
+	border-image-source: url("../Resources/GDI32/button_border_indent.png");
 	border-image-slice: 2 2 2 2;
 	background-image: url("../Resources/GDI32/checkerboard.png");
 	background-repeat: repeat;
@@ -263,12 +316,89 @@ treeview header button {
 treeview header button:active,
 treeview header button:checked {
 	border-image-source: url("../Resources/GDI32/button_header_border_active.png");
-	border-image-slice: 3 3 3 3;
 }
 
 treeview header button:disabled,
 treeview header button:disabled:active,
 treeview header button:disabled:checked {
-	border-image-source: url("../Resources/GDI32/button_header_border_insense.png");
-	border-image-slice: 3 3 3 3;
+	border-image-source: url("../Resources/GDI32/button_header_border_disabled.png");
+}
+
+/* window buttons */
+button.titlebutton {
+}
+button.titlebutton:active:not(.appmenu),
+button.titlebutton:checked:not(.appmenu) {
+}
+
+.titlebutton.close,
+.titlebutton.maximize,
+.titlebutton.minimize {
+	background-color: red;
+}
+
+.titlebutton.minimize {
+	background-color: red;
+}
+.titlebutton.minimize:backdrop {
+	background-color: red;
+}
+.titlebutton.minimize:checked,
+.titlebutton.minimize:active {
+	background-color: red;
+}
+
+.titlebutton.maximize {
+	background-color: red;
+}
+.titlebutton.maximize:backdrop {
+	background-color: red;
+}
+.titlebutton.maximize:checked,
+.titlebutton.maximize:active {
+	background-color: red;
+}
+
+.maximized .titlebutton.maximize  {
+	background-color: red;
+}
+.maximized .titlebutton.maximize:backdrop {
+	background-color: red;
+}
+.maximized .titlebutton.maximize:checked,
+.maximized .titlebutton.maximize:active  {
+	background-color: red;
+}
+
+.titlebutton.close {
+	background-color: red;
+}
+.titlebutton.close:backdrop {
+	background-color: red;
+}
+.titlebutton.close:checked,
+.titlebutton.close:active {
+	background-color: red;
+}
+
+/* Groups these buttons together */
+.titlebutton.minimize {
+	background-color: red;
+}
+.titlebutton.maximize {
+	background-color: red;
+}
+.titlebutton.close {
+	background-color: red;
+}
+
+/* setting :not(.appmenu) in button.titlemenu breaks the main window buttons position,
+* so restore any damage made to buttons styled with both .appmenu and .titlemenu here */
+button.appmenu {
+}
+
+button.appmenu:active,
+button.appmenu:checked,
+button.appmenu:disabled:active,
+button.appmenu:disabled:checked {
 }
