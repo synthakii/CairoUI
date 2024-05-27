@@ -1,0 +1,89 @@
+.wintc-taskband {;
+	border: 3px solid;
+	border-image-source: url("../Resources/GDI32/taskband_border.png");
+	border-image-slice: 3 3 3 3;
+}
+
+.wintc-taskbuttons button {
+	margin-top: 4px;
+	margin-bottom: 2px;
+	margin-left: 3px;
+}
+.wintc-taskbuttons button:checked {
+	padding: 1px;
+	border: 2px solid;
+	border-image-source: url("../Resources/GDI32/button_border_toggle.png");
+	border-image-slice: 2 2 2 2;
+	box-shadow: inset 0px 1px 0px 0px @ButtonHilight;
+	font-weight: bold;
+}
+.wintc-taskbuttons button:active,
+.wintc-taskbuttons button:checked:active {
+}
+.wintc-taskbuttons button label {
+	padding-left: 2px;
+}
+.wintc-taskbuttons button:active label {
+	color: @ButtonText;
+	text-shadow: none;
+}
+.wintc-taskbuttons button:checked:active label {
+	color: transparent;
+	text-shadow: 1px 1px @ButtonText;
+}
+.wintc-taskbuttons button image {
+	padding-left: 1px;
+}
+.wintc-taskbuttons button:active image {
+	-gtk-icon-transform: translateY(0px);
+}
+.wintc-taskbuttons button:checked image {
+	-gtk-icon-transform: translateY(1px);
+}
+
+button.wintc-start-button {
+	margin-top: 4px;
+	margin-bottom: 2px;
+	margin-left: 2px;
+	padding-right: 2px;
+	font-weight: bold;
+}
+button.wintc-start-button:active {
+}
+button.wintc-start-button:checked, button.wintc-start-button:checked:hover {
+	border-image-source: url("../Resources/GDI32/button_border_indent.png");
+	background-image: url("");
+}
+.wintc-flag {
+	background-repeat: no-repeat;
+	background-image: url("../Resources/GDI32/flag.png");
+	margin-left: 1px;
+	padding-right: 2px;
+	min-height: 16px;
+	min-width: 16px;
+}
+button.wintc-start-button:active .wintc-flag,
+button.wintc-start-button:checked .wintc-flag {
+	background-repeat: no-repeat;
+	background-position: 1px 1px;
+	background-image: url("../Resources/GDI32/flag.png");
+	min-height: 16px;
+	min-width: 16px;
+}
+button.wintc-start-button .upper {
+}
+
+.wintc-systray {
+	margin-top: 4px;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	border: 3px solid;
+	border-image-source: url("../Resources/GDI32/frame_basic.png");
+	border-image-slice: 3 3 3 3;
+}
+.wintc-systray label {
+	padding-top: 1px;
+	padding-left: 11px;
+	padding-right: 9px;
+}
+      

@@ -85,6 +85,11 @@ button.flat.popup:checked {
 
 /* Dialogue buttons. */
 /* We're using border images here since dialog button borders are 3px on Windows 95 with individual colour properties.*/
+
+buttonbox.dialog-action-area button {
+	padding: 3px 0px;
+}
+
 .dialog-action-area button {
 	/*margin-top: 2px;
 	margin-bottom: 2px;
