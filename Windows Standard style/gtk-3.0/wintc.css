@@ -73,6 +73,200 @@ button.wintc-start-button:checked .wintc-flag {
 button.wintc-start-button .upper {
 }
 
+.wintc-personal-menu .titlebar {
+	padding: 0px;
+	background-color: transparent;
+	background-image: none;
+}
+.wintc-personal-menu {
+	border: 3px solid;
+	border-image: url("../Resources/GDI32/frame_outset.png");
+	border-image-slice: 3 3 3 3;
+}
+.wintc-personal-menu decoration {
+}
+.start-userpane {
+	margin-top: 3px;
+	margin-left: 3px;
+	margin-right: 3px;
+	background-image: linear-gradient(to right, @ActiveTitle, @GradientActiveTitle);
+}
+.start-userpane box {
+	min-height: 0px;
+	min-width: 0px;
+}
+.start-userpane label {
+	margin-top: 8px;
+	margin-bottom: 11px;
+	margin-left: -16px;
+	font-size: 14pt;
+	font-style: italic;
+	font-weight: bold;
+	color: @TitleText;
+}
+.start-programs-column {
+	border-style: solid;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 2px;
+	border-left-width: 0px;
+	border-image-slice: 0 0 2 0;
+	border-image-source: url("../Resources/GDI32/separator_horz.png");
+	padding-top: 4px;
+	padding-left: 2px;
+	padding-right: 4px;
+	margin-left: 3px;
+	min-width: 184px;
+}
+.start-programs-column menubar > menuitem {
+	border: 0px;
+	margin-bottom: 4px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-left: 4px;
+	margin-right: 2px;
+}
+.start-programs-column menubar > menuitem:hover {
+	background-color: @Hilight;
+	color: @HilightText;
+}
+.start-programs-column menubar > menuitem label {
+	margin-left: -2px;
+	
+}
+.start-programs-column menubar > menuitem image {
+
+}
+.start-default-item label:first-child {
+	font-weight: bold;
+}
+.start-programs-column menubar > menuitem:last-child {
+}
+.start-programs-column menubar menuitem.start-all-programs {
+	margin-bottom: 0px;
+	margin-left: 2px;
+	margin-right: -2px;
+}
+.start-programs-column menubar menuitem.start-all-programs > box {
+	margin-top: -3px;
+	margin-bottom: -3px;
+}
+.start-programs-column menubar menuitem.start-all-programs .arrow {
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-image: url("../Resources/Marlett/arrow_right.png");
+        min-width: 13px;
+	margin-left: 9px;
+}
+.start-programs-column menubar menuitem.start-all-programs:hover .arrow {
+	background-image: url("../Resources/Marlett/arrow_right_selected.png");
+}
+.start-programs-column menubar menuitem.start-all-programs box.horizontal label {
+	margin-left: -27px;
+}
+.start-programs-column menubar > separator {
+	border-top: 1px solid @ButtonShadow;
+	border-bottom: 1px solid @ButtonHilight;
+	margin-top: 3px;
+	margin-left: 4px;
+}
+.start-programs-column menubar > separator:nth-last-child(2) {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.start-places-column {
+	border-style: solid;
+	border-top-width: 0px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-right-width: 0px;
+	border-image-source: url("../Resources/GDI32/separator_junc.png");
+	border-image-slice: 0 0 2 2;
+	padding-top: 4px;
+	padding-left: 4px;
+	margin-right: 3px;
+	min-width: 178px;
+}
+.start-places-column menubar > menuitem {
+	border: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	margin-bottom: 4px;
+}
+.start-places-column menubar > menuitem:hover {
+	background-color: @Hilight;
+	color: @HilightText;
+}
+.start-places-column menubar > menuitem label{
+	margin-left: -2px;
+	margin-top: -1px;
+	margin-bottom: -1px;
+}
+.start-places-column menubar > menuitem.significant > box label {
+	font-weight: bold;
+}
+.start-places-column menubar > menuitem image {
+}
+.start-places-column menubar > separator {
+	border-top: 1px solid @ButtonShadow;
+	border-bottom: 1px solid @ButtonHilight;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+.start-logoffpane button {
+	border: 0px;
+	margin: 0px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 4px;
+	margin-top: 2px;
+	margin-bottom: 3px;
+	margin-right: 3px;
+}
+.start-logoffpane button:first-child {
+	padding-right: 8px;
+	margin-right: 0px;
+}
+.start-logoffpane button, .start-logoffpane button:active, .start-logoffpane button:checked, .start-logoffpane button:focus, .start-logoffpane button:hover {
+}
+.start-logoffpane button:hover {
+	background-color: @Hilight;
+	color: @HilightText;
+}
+.start-logoffpane button:active {
+	
+}
+.start-logoffpane button .logoff-icon,
+.start-logoffpane button .shutdown-icon {
+	min-height: 24px;
+	min-width: 24px;
+	margin-right: 3px;
+	padding: 1px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.start-logoffpane button .logoff-icon {
+	background-image: url("../Resources/GDI32/logoff_button.png");
+}
+.start-logoffpane button .shutdown-icon {
+	background-image: url("../Resources/GDI32/shutdown_button.png");
+}
+.start-logoffpane button:hover .logoff-icon {
+	background-image: url("../Resources/GDI32/logoff_button_hover.png");
+}
+.start-logoffpane button:hover .shutdown-icon {
+	background-image: url("../Resources/GDI32/shutdown_button_hover.png");
+}
+.start-logoffpane button:active .logoff-icon {
+	background-position: unset;
+	background-position: 2px 2px;
+}
+.start-logoffpane button:active .shutdown-icon {
+	background-position: unset;
+	background-position: 2px 2px;
+}
+
 .wintc-systray {
 	margin-top: 4px;
 	margin-bottom: 2px;
