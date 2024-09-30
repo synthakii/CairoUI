@@ -68,10 +68,9 @@ scale.vertical indicator {
 
 scale.vertical slider {
 	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: 1px 50%;
 	background-image: url("../Resources/GDI32/scale_vert_slider.png");
-	margin: 0px -12px 0px -12px;
+	background-color: @ButtonFace;
+	margin: 0px -10px 0px -11px;
 	min-height: 11px;
 	min-width: 21px;
 }
@@ -85,8 +84,8 @@ scale.vertical slider:disabled {
 }
 
 scale.vertical.marks-after indicator {
-	padding-left: 11px;
-	margin-right: -8px;
+	padding-left: 9px;
+	margin-right: -6px;
 	min-height: 1px;
 	min-width: 2px;
 }
@@ -128,7 +127,6 @@ scale.vertical.marks-before {
 }
 
 scale.vertical.marks-after slider {
-	background-position: 3px 50%;
 	background-image: url("../Resources/GDI32/scale_vert_right_slider_arrow.png");
 }
 
@@ -168,10 +166,9 @@ scale.horizontal indicator {
 
 scale.horizontal slider {
 	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: 50% 2px;
 	background-image: url("../Resources/GDI32/scale_horz_slider.png");
-	margin: -12px 0px -12px 0px;
+	background-color: @ButtonFace;
+	margin: -10px 0px -11px 0px;
 	min-height: 21px;
 	min-width: 11px;
 }
@@ -185,15 +182,15 @@ scale.horizontal slider:disabled {
 }
 
 scale.horizontal.marks-after indicator {
-	padding-top: 11px;
-	margin-bottom: -10px;
+	padding-top: 10px;
+	margin-bottom: -9px;
 	min-height: 2px;
 	min-width: 1px;
 }
 
 scale.horizontal.marks-before indicator {
-	padding-bottom: 9px;
-	margin-top: -10px;
+	padding-bottom: 10px;
+	margin-top: -11px;
 	min-height: 2px;
 	min-width: 1px;
 }
@@ -223,11 +220,9 @@ scale.horizontal.marks-before {
 }
 
 scale.horizontal.marks-after slider {
-	background-position: 50% 3px;
 	background-image: url("../Resources/GDI32/scale_horz_down_slider_arrow.png");
 }
 scale.horizontal.marks-before slider {
-	background-position: 50% 3px;
 	background-image: url("../Resources/GDI32/scale_horz_up_slider_arrow.png");
 }
 

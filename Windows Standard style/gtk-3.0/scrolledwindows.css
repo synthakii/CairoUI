@@ -1,5 +1,6 @@
 /* scrolled window */
 scrolledwindow {
+
 }
 scrolledwindow viewport list row {
 }
@@ -12,7 +13,11 @@ stacksidebar > scrolledwindow {
 }
 
 frame > scrolledwindow {
+	
 }
 
-notebook stack scrolledwindow {
+box notebook stack scrolledwindow {
+	border: 2px solid;
+	border-image-source: url("../Resources/GDI32/frame_inset.png");
+	border-image-slice: 2 2 2 2;
 }

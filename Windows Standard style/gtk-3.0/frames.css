@@ -6,8 +6,13 @@ viewport > box > frame > border.flat,
 stack > box > frame > border.flat,
 frame border {
 	border: 3px solid;
-	border-image: url("../Resources/GDI32/frame_groove.png");
+	border-image-source: url("../Resources/GDI32/frame_groove.png");
 	border-image-slice: 3 3 3 3;
+}
+box > frame > border {
+	border: 2px solid;
+	border-image-source: url("../Resources/GDI32/frame_inset.png");
+	border-image-slice: 2 2 2 2;
 }
 box > frame > border.flat {
 	border: none;
@@ -95,4 +100,3 @@ entry window frame {
 }
 entry window frame scrolledwindow {
 }
-

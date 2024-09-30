@@ -6,7 +6,7 @@ scrollbar trough {
 	background-repeat: repeat;
 }
 scrollbar slider {
-	background-color: @ScrollBar;
+	background-color: @ButtonFace;
 	border: 3px solid;
 	border-image-source: url("../Resources/GDI32/frame_outset.png");
 	border-image-slice: 3 3 3 3;

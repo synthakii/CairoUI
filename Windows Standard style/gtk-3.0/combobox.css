@@ -42,7 +42,12 @@ combobox entry.combo {
 	padding: 1px;
 }
 #gtk-combobox-popup-menu menuitem {
+	background-color: @Window;
 	margin-left: -21px;
+}
+#gtk-combobox-popup-menu menuitem:hover {
+	background-color: @Hilight;
+	color: @HilightText;
 }
 #gtk-combobox-popup-menu arrow  {
 	-gtk-icon-source: none;

@@ -30,35 +30,30 @@ popover.background {
 	border: 1px solid @ButtonDkShadow;
 	border-radius: 8px;
 }
-popover button:checked {
-	background-image: linear-gradient(45deg, @ButtonFace 25%, transparent 25%, transparent 75%, @ButtonFace 75%, @ButtonFace), linear-gradient(45deg, @ButtonFace 25%, transparent 25%, transparent 75%, @ButtonFace 75%, @ButtonDkShadow);
-	background-size: 2px 2px;
-	background-position: 0 0, 1px 1px;
-}
-
 popover button.flat {
 	border-image-source: url("../Resources/GDI32/button_balloon_border.png");
 }
 popover button.flat:disabled {
-	border-image-source: url("../Resources/GDI32/button_balloon_border.png");
 }
 popover button.flat:hover {
-	border-image-source: url("../Resources/GDI32/button_balloon_border.png");;
+	border-image-source: url("../Resources/GDI32/button_balloon_border.png");
+}
+popover button.flat:active {
+}
+popover button.flat:checked {
+}
+popover button.flat.popup:checked {
 }
 
 modelbutton label {
-	background-color: red;
 }
 modelbutton.flat:hover {
-	background-color: red;
 }
 modelbutton arrow {
-	background-color: red;
 }
 
 .app-notification,
 popover stack {
-	background-color: red;
 }
 
 .floating-bar,

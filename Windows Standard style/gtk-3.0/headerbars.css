@@ -1,17 +1,13 @@
 /* Headerbars */
 headerbar,
 .titlebar {
-	padding-top: 2px;
 	padding-bottom: 2px;
-	padding-left: 1px;
-	padding-right: 2px;
-	background-image: linear-gradient(to right, @ActiveTitle, @GradientActiveTitle);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	background-image: url("../Resources/GDI32/separator_horz.png");
+	background-color: @Menu;
 }
 headerbar entry {
-	background-color: #ff0000;
-}
-headerbar button {
-	
 }
 headerbar separator.titlebutton.vertical {
 	padding: 0px;
@@ -21,5 +17,4 @@ headerbar scale {
 	background-color: #ff0000;
 }
 headerbar .titlebutton * {
-	background-color: #ff0000;
 }

@@ -11,8 +11,8 @@ toolbar {
 	color: @ButtonText;
 }
 toolbar.horizontal > separator {
-	margin-top: -3px;
-	margin-bottom: -2px;
+	margin-top: -1px;
+	margin-bottom: -1px;
 	margin-left: 6px;
 	margin-right: 6px;
 	border-left: 1px solid @ButtonShadow;

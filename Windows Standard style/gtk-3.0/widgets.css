@@ -46,21 +46,6 @@ iconview:selected {
 	outline: 1px dotted @ButtonDkShadow;
 }
 
-.gtkstyle-fallback {
-	background-color: #ff0000;
-}
-.gtkstyle-fallback:hover {
-	background-color: #ff0000;
-}
-.gtkstyle-fallback:active {
-	background-color: #ff0000;
-}
-.gtkstyle-fallback:disabled {
-	background-color: #ff0000;
-}
-.gtkstyle-fallback:selected {
-	background-color: #ff0000;
-}
 
 stepper,
 .stepper {
@@ -172,21 +157,42 @@ iconview.view.cell {
 * infobar *
 ***********/
 infobar {
-	background-color: #ff0000;
 }
 /* The Info bar uses the colors and button layout from clippy! */
-.info {
-	background-color: #ff0000;
-}
-.warning {
-	background-color: #ff0000;
-}
-.question {
-	background-color: #ff0000;
-}
+.info,
+.warning,
+.question,
 .error {
-	background-color: #ff0000;
+	background-color: @InfoWindow;
+	color: @InfoText;
+	border: 1px solid @ButtonDkShadow;
 }
+
+infobar button,
+infobar button.circular {
+	border-image-source: url("../Resources/GDI32/button_balloon_border.png");
+}
+infobar button:focus,
+infobar button.circular:focus {
+	border-image-source: url("../Resources/GDI32/button_balloon_border.png");
+}
+infobar button:disabled,
+infobar button.circular:disabled {
+	border-image-source: url("../Resources/GDI32/button_balloon_border.png");
+}
+infobar button:hover,
+infobar button.circular:hover {
+	border-image-source: url("../Resources/GDI32/button_balloon_border.png");
+}
+infobar button:active,
+infobar button.circular:active {
+	border-image-source: url("../Resources/GDI32/button_balloon_border.png");
+}
+infobar button:checked,
+infobar button.circular:checked {
+	border-image-source: url("../Resources/GDI32/button_balloon_border.png");
+}
+
 
 /*******************
 * symbolic images *

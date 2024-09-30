@@ -18,9 +18,14 @@ viewport list row:selected {
 viewport list row box {
 	background-color: @Window;
 }
-
+viewport.exoiconview {
+	background-color: @Window;
+}
 grid viewport {
-	background-color: red;
+	border: 3px solid;
+	border-image-source: url("../Resources/GDI32/frame_inset.png");
+	border-image-slice: 3 3 3 3;
+	background-color: @ButtonShadow;
 }
 grid viewport box scrolledwindow viewport {
 	background-color: red;

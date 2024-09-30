@@ -2,7 +2,9 @@
 menu,
 .menu,
 .context-menu {
-	background-color: @Menu;
+	font-family: sans-serif;
+	font-size: 12px;
+	background-color: @ButtonFace;
 	color: @MenuText;
 	padding: 3px;
 	border: 3px solid;
@@ -14,6 +16,7 @@ menu,
 menu {
 }
 menu menuitem {
+	background-color: @Menu;
 	padding-left: 21px;
 	padding-right: 16px;
 	min-height: 17px;
@@ -52,16 +55,22 @@ menu menuitem check:disabled:not(:checked),
 menu menuitem radio:not(:checked),
 menu menuitem check:not(:checked) {
 	background-image: url("");
+	background-color: transparent;
+	-gtk-icon-source: url("");
 }
 
 menu menuitem radio:checked,
 menu menuitem radio:indeterminate {
 	background-image: url("../Resources/Marlett/menu_radio_checked.png");
+	background-color: transparent;
+	-gtk-icon-source: url("");
 	margin-right: 1px;
 }
 menu menuitem check:indeterminate,
 menu menuitem check:checked {
 	background-image: url("../Resources/Marlett/menu_checkbox_checked.png");
+	background-color: transparent;
+	-gtk-icon-source: url("");
 	margin-right: 1px;
 }
 menu menuitem:active > radio:checked,
@@ -69,7 +78,9 @@ menu menuitem:hover > radio:checked {
 	background-image: url("../Resources/Marlett/menu_radio_checked_selected.png");
 }
 menu menuitem:active > check:checked,
-menu menuitem:hover > check:checked {
+menu menuitem:hover > check:checked,
+menu menuitem:active checkbutton check:checked,
+menu menuitem:hover checkbutton check:checked {
 	background-image: url("../Resources/Marlett/menu_checkbox_checked_selected.png");
 }
 menu menuitem radio:indeterminate:disabled,

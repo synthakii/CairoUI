@@ -109,6 +109,7 @@ notebook > header.bottom > tabs > tab label {
 notebook > header.bottom > tabs > tab:checked {
 }
 notebook > header.bottom > tabs > tab:checked label {
+}
 notebook > header.bottom > tabs > arrow {
 }
 notebook > header.bottom > tabs > arrow.up {

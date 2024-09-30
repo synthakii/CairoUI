@@ -36,6 +36,18 @@ button:disabled:checked image {
 	-gtk-icon-transform: translateX(1px) translateY(1px);
 }
 
+/* gtk fall back buttons? */
+.gtkstyle-fallback {
+}
+.gtkstyle-fallback:hover {
+}
+.gtkstyle-fallback:active {
+}
+.gtkstyle-fallback:disabled {
+}
+.gtkstyle-fallback:selected {
+}
+
 /* Toggle buttons */
 button.toggle {
 	border-image-source: url("../Resources/GDI32/button_border.png");
@@ -72,6 +84,7 @@ button.flat:active {
 }
 button.flat:checked {
 	padding: 1px;
+	border: 2px solid;
 	border-image-source: url("../Resources/GDI32/frame_basic.png");
 	border-image-slice: 2 2 2 2;
 	background-image: url("../Resources/GDI32/checkerboard.png");
@@ -186,7 +199,7 @@ button.sidebar-button {
 button.sidebar-button:hover,
 button.sidebar-button:checked,
 button.sidebar-button:active {
-	border: 3px solid #ff0000;
+	border: 3px solid ;
 }
 
 /* Row buttons */
@@ -406,4 +419,36 @@ button.appmenu:active,
 button.appmenu:checked,
 button.appmenu:disabled:active,
 button.appmenu:disabled:checked {
+}
+
+/* Flat buttons */
+headerbar button,
+headerbar button.toggle,
+headerbar button.radio {
+	border-image-source: url("");
+}
+headerbar button:disabled,
+headerbar button.toggle:disabled,
+headerbar button.radio:disabled {
+	border-image-source: url("");
+}
+headerbar button:hover,
+headerbar button.toggle:hover,
+headerbar button.radio:hover {
+	border-image-source: url("../Resources/GDI32/button_border_sidebar.png");
+}
+headerbar button:active,
+headerbar button.toggle:active,
+headerbar button.radio:active {
+	border-image-source: url("../Resources/GDI32/frame_basic.png");
+}
+headerbar button:checked,
+headerbar button.toggle:checked,
+headerbar button.radio:checked {
+	padding: 1px;
+	border: 2px solid;
+	border-image-source: url("../Resources/GDI32/frame_basic.png");
+	border-image-slice: 2 2 2 2;
+	background-image: url("../Resources/GDI32/checkerboard.png");
+	background-repeat: repeat;
 }
