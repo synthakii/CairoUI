@@ -10,29 +10,44 @@ viewport list.tweak-categories {
 viewport row {
 }
 viewport list {
+	border: none;
+	padding: 1px;
 }
 viewport list row {
 }
 viewport list row:selected {
 }
 viewport list row box {
+}
+frame scrolledwindow viewport.frame {
+	background-color: @Window;
+}
+viewport.frame {
 	background-color: @Window;
 }
 viewport.exoiconview {
-	background-color: @Window;
+}
+viewport flowbox {
+	background-color: @ButtonFace;
 }
 grid viewport {
-	border: 3px solid;
+	border: 2px solid;
 	border-image-source: url("../Resources/GDI32/frame_inset.png");
-	border-image-slice: 3 3 3 3;
+	border-image-slice: 2 2 2 2;
 	background-color: @ButtonShadow;
 }
 grid viewport box scrolledwindow viewport {
 	background-color: red;
 }
+overlay > grid.horizontal {
+	border: 2px solid;
+	border-image-source: url("../Resources/GDI32/frame_inset.png");
+	border-image-slice: 2 2 2 2;
+}
 
 view,
 .view {
+	background-color: @Window;
 }
 view:disabled,
 view:disabled:disabled {

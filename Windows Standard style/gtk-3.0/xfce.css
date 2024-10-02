@@ -4,9 +4,8 @@ XfdesktopIconView.view {
 	background-repeat: no-repeat;
 	background-position: 3px 3px;
 	background-size: calc(100% - 7px) calc(100% - 7px);
+	background-color: transparent;
 	color: @Hilight;
-	border-radius: 0px; 
-	background-color: rgba(0, 0, 0, 0);
 }
 XfdesktopIconView.view:active {
 	background-image: -gtk-gradient(linear, left top, right bottom, from (@Hilight));

@@ -67,17 +67,7 @@ statusbar frame box {
 statusbar separator {
 }
 
-scrolledwindow.frame {
-	/*margin-top: -1px;
-	margin-bottom: -2px;*/
-	background-color: @ButtonFace;
-	border: 2px solid;
-	border-image-source: url("../Resources/GDI32/frame_inset.png");
-	border-image-slice: 2 2 2 2;
-	background-image: url("../Resources/GDI32/gripper.png");
-	background-repeat: no-repeat;
-	background-position: right bottom;
-}
+
 iconview.view,
 textview.view {
 	background-color: @Window;

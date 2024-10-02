@@ -163,9 +163,11 @@ infobar {
 .warning,
 .question,
 .error {
+	border: 3px solid;
+	border-image-source: url("../Resources/GDI32/tip_border.png");
+	border-image-slice: 3 3 3 3;
 	background-color: @InfoWindow;
 	color: @InfoText;
-	border: 1px solid @ButtonDkShadow;
 }
 
 infobar button,
@@ -339,6 +341,25 @@ switch:checked {
 /***************
 * Colorswatch *
 ***************/
+colorchooser colorswatch {
+	border: 2px solid;
+	border-image-source: url("../Resources/GDI32/frame_inset.png");
+	border-image-slice: 2 2 2 2;
+}
+colorchooser colorswatch:selected,
+colorchooser colorswatch:hover {
+	margin: -1px;
+	border: 3px solid;
+	border-image-source: url("../Resources/GDI32/colorswatch_hover.png");
+	border-image-slice: 3 3 3 3;
+}
+colorchooser colorswatch.activatable overlay {
+	-gtk-icon-transform: scale(0);
+}
+colorchooser #add-color-button.activatable overlay {
+	-gtk-icon-transform: scale(1);
+}
+
 row colorswatch {
 }
 button colorswatch {

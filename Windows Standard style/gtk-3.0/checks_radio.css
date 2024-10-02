@@ -131,34 +131,40 @@ treeview check:checked,
 treeview check:active:checked,
 treeview check:disabled:checked {
 	-gtk-icon-source: url("../Resources/GDI32/checkbox_checked_treeview.png");
+	background-color: transparent;
 }
 
 treeview check:indeterminate,
 treeview check:indeterminate:active,
 treeview check:indeterminate:disabled {
 	-gtk-icon-source: url("../Resources/GDI32/checkbox_indecisive_treeview.png");
+	background-color: transparent;
 }
 
 treeview check:not(:checked),
 treeview check:active:not(:checked),
 treeview check:disabled:not(:checked) {
 	-gtk-icon-source: url("../Resources/GDI32/checkbox_unchecked_treeview.png");
+	background-color: transparent;
 }
 
 treeview radio:checked,
 treeview radio:active:checked,
 treeview radio:disabled:checked {
 	-gtk-icon-source: url("../Resources/GDI32/radio_checked_treeview.png");
+	background-color: transparent;
 }
 
 treeview radio:indeterminate,
 treeview radio:indeterminate:active,
 treeview radio:indeterminate:disabled {
 	-gtk-icon-source: url("../Resources/GDI32/radio_indecisive_treeview.png");
+	background-color: transparent;
 }
 
 treeview radio:not(:checked),
 treeview radio:active:not(:checked),
 treeview radio:disabled:not(:checked) {
 	-gtk-icon-source: url("../Resources/GDI32/radio_unchecked_treeview.png");
+	background-color: transparent;
 }

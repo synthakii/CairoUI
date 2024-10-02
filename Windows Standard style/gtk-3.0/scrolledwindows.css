@@ -1,8 +1,36 @@
 /* scrolled window */
-scrolledwindow {
-
+scrolledwindow,
+paned > notebook > stack > scrolledwindow.frame,
+window > notebook > stack > box > scrolledwindow.frame,
+notebook notebook stack box scrolledwindow.frame,
+widget > scrolledwindow.frame,
+grid > box > scrolledwindow.frame,
+stack > box > box > box.horizontal > scrolledwindow.frame,
+frame > box > notebook > stack > scrolledwindow,
+window > box > notebook > stack > scrolledwindow,
+window > box > box > notebook > stack > grid > scrolledwindow.frame,
+window > box > box > notebook > stack > box > box > box > box > scrolledwindow.frame,
+window > notebook > stack > box > box > scrolledwindow.frame,
+dialog > box > box > notebook > stack > box > scrolledwindow.frame,
+dialog > box > box > notebook > stack > box > box > scrolledwindow.frame,
+dialog > box > notebook > stack > box > scrolledwindow,
+printdialog > box > box > notebook > stack > box > box > scrolledwindow.frame,
+window > box > box > notebook > stack > scrolledwindow,
+window > grid > paned > notebook > stack > scrolledwindow,
+viewport.exoiconview.view,
+window > grid > paned > grid > notebook > stack > grid.vertical {
+	border: 2px solid;
+	border-image-source: url("../Resources/GDI32/frame_inset.png");
+	border-image-slice: 2 2 2 2;
 }
-scrolledwindow viewport list row {
+frame scrolledwindow,
+box.dialog-vbox.vertical > scrolledwindow,
+notebook stack scrolledwindow {
+	border: none;
+}
+
+/*scrolledwindow viewport list row {
+	background-color: @Window;
 }
 
 stacksidebar > scrolledwindow { 
@@ -12,12 +40,28 @@ stacksidebar > scrolledwindow {
 	background-color: red;
 }
 
-frame > scrolledwindow {
-	
+frame scrolledwindow {
+	border: none;
+}
+
+box.vertical > box.dialog-vbox > scrolledwindow {
+	border: none;
+}
+
+leaflet box scrolledwindow {
+	border: 2px solid;
+	border-image-source: url("../Resources/GDI32/frame_inset.png");
+	border-image-slice: 2 2 2 2;
+}
+
+paned scrolledwindow {
+	border: 2px solid;
+	border-image-source: url("../Resources/GDI32/frame_inset.png");
+	border-image-slice: 2 2 2 2;
 }
 
 box notebook stack scrolledwindow {
 	border: 2px solid;
 	border-image-source: url("../Resources/GDI32/frame_inset.png");
 	border-image-slice: 2 2 2 2;
-}
+}*/

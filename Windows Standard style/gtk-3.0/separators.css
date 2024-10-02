@@ -3,8 +3,14 @@ separator.vertical {
 	border-left: 1px solid @ButtonShadow;
 	border-right: 1px solid @ButtonHilight;
 }
-
 separator.horizontal {
 	border-top: 1px solid @ButtonShadow;
 	border-bottom: 1px solid @ButtonHilight;
+}
+
+viewport separator.vertical {
+	border: none;
+}
+viewport separator.horizontal {
+	border: none;
 }

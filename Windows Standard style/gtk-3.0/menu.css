@@ -2,10 +2,10 @@
 menu,
 .menu,
 .context-menu {
+	background-color: @Menu;
+	color: @MenuText;
 	font-family: sans-serif;
 	font-size: 12px;
-	background-color: @ButtonFace;
-	color: @MenuText;
 	padding: 3px;
 	border: 3px solid;
 	border-image: url("../Resources/GDI32/frame_outset.png");

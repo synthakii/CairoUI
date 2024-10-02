@@ -36,6 +36,27 @@ button:disabled:checked image {
 	-gtk-icon-transform: translateX(1px) translateY(1px);
 }
 
+/* csd headerbars buttons */
+button.titlebutton,
+button.titlebutton:active,
+button.titlebutton:hover,
+button.titlebutton:disabled {
+	border: 3px solid;
+	border-image-source: url("../Resources/GDI32/button_border.png");
+	border-image-slice: 3 3 3 3;
+	color: @ButtonText;
+	background-color: @ButtonFace;
+	padding: 0px;
+}
+button.titlebutton:active {
+	border-image-source: url("../Resources/GDI32/button_border_indent.png");
+}
+button.close.titlebutton {
+	margin-left: -4px;
+}
+button.maximize.titlebutton {
+	margin-left: -6px;
+}
 /* gtk fall back buttons? */
 .gtkstyle-fallback {
 }
@@ -341,6 +362,13 @@ treeview header button:disabled:active,
 treeview header button:disabled:checked {
 	border-image-source: url("../Resources/GDI32/button_header_border_disabled.png");
 }
+
+/* scrollwindow treeview buttons */
+grid > box scrolledwindow treeview header button,
+frame > widget scrolledwindow treeview header button {
+	border-image-source: url("../Resources/GDI32/button_header_border_disabled.png");
+}
+
 
 /* window buttons */
 button.titlebutton {
