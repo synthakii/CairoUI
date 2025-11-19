@@ -1,1 +1,6 @@
-This is somewhat of a fork of Chicago95, it's only meant to be used with XFCE, and with gtk3-classic.
+This is somewhat of a fork of Chicago95, it's only meant to be used with XFCE
+
+Dependancies:
+gtk3-classic
+se98-icon-theme-git
+icewm

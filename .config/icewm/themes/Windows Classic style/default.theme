@@ -1,0 +1,432 @@
+# -----------------------------------------------------------
+# Themable preferences.
+# To override the themes, place them in ~/.icewm/prefoverride
+# -----------------------------------------------------------
+#  Theme author, e-mail address, credits.
+ThemeAuthor="synthakii"
+
+#  Description of the theme, credits.
+ThemeDescription=""
+
+#  The theme look.
+Look="pixmap"
+
+#  Horizontal window border.
+BorderSizeX=4 # [0-128]
+
+#  Vertical window border.
+BorderSizeY=4 # [0-128]
+
+#  Horizontal dialog window border.
+DlgBorderSizeX=3 # [0-128]
+
+#  Vertical dialog window border.
+DlgBorderSizeY=3 # [0-128]
+
+#  Resize corner width.
+CornerSizeX=4 # [0-64]
+
+#  Resize corner height.
+CornerSizeY=4 # [0-64]
+
+#  List of gradient pixmaps in the current theme.
+Gradients="titleAT.xpm titleAB.xpm titleIT.xpm titleIB.xpm"
+
+#  Dimension of the large icons.
+HugeIconSize=32 # [8-128]
+
+#  Dimension of the large icons.
+LargeIconSize=32 # [8-128]
+
+#  Dimension of the small icons.
+SmallIconSize=16 # [8-128]
+
+#  Menu icon size.
+MenuIconSize=16 # [8-128]
+
+#  Show application icon over menu button.
+ShowMenuButtonIcon=1 # 0/1
+
+#  Vertical offset for the menu button icon.
+MenuButtonIconVertOffset=0 # [-128-128]
+
+#  Horizontal margin of the quickswitch window.
+QuickSwitchHorzMargin=0 # [0-64]
+
+#  Distance between the active icon and it's border.
+QuickSwitchIconBorder=4 # [0-64]
+
+#  Vertical margin in the quickswitch window.
+QuickSwitchIconMargin=4 # [0-64]
+
+#  Height of the separator between (all reachable) icons and text, 0 to avoid it.
+QuickSwitchSeparatorSize=20 # [0-64]
+
+#  Vertical margin of the quickswitch window.
+QuickSwitchVertMargin=10 # [0-64]
+
+#  Does it support the 'O' title bar button images (for mouse rollover)
+RolloverButtonsSupported=0 # 0/1
+
+#  Scrollbar width.
+ScrollBarX=16 # [0-64]
+
+#  Scrollbar (button) height.
+ScrollBarY=17 # [0-64]
+
+#  Dimension of the small icons.
+SmallIconSize=16 # [8-128]
+
+#  Task bar clock/battery monitor uses nice pixmap LCD display (but then it doesn't display correctly in many languages anymore, e.g., for Japanese and Korean it works only when a real font is used and not the LCD pixmaps.
+TaskBarClockLeds=0 # 0/1
+
+#  Width of taskbutton side icons.
+TaskbuttonIconOffset=0 # [0-16]
+
+#  Draw window title centered (obsoleted by TitleBarJustify)
+TitleBarCentered=0 # 0/1
+
+#  Title bar height.
+TitleBarHeight=19 # [0-128]
+
+#  Horizontal offset for the window title text.
+TitleBarHorzOffset=0 # [-128-128]
+
+#  Join title*S and title*T.
+TitleBarJoinLeft=0 # 0/1
+
+#  Join title*T and title*B.
+TitleBarJoinRight=1 # 0/1
+
+#  Justification of the window title.
+TitleBarJustify=0 # [0-100]
+
+#  Vertical offset for the window title text.
+TitleBarVertOffset=0 # [-128-128]
+
+#  Titlebar buttons from left to right (x=close, m=max, i=min, h=hide, r=rollup, s=sysmenu, d=depth)
+TitleButtonsLeft="s"
+
+#  Titlebar buttons from right to left (x=close, m=max, i=min, h=hide, r=rollup, s=sysmenu, d=depth)
+TitleButtonsRight="xmi"
+
+#  Titlebar buttons supported by theme (x,m,i,r,h,s,d)
+TitleButtonsSupported="shxmi"
+
+#  Surround the tray with plastic border.
+TrayDrawBevel=0 # 0/1
+
+#  Maximum scaled height of tray icons.
+TrayIconMaxHeight=24 # [16-128]
+
+#  Maximum scaled width of tray icons.
+TrayIconMaxWidth=32 # [16-128]
+
+# -----------------------------------------------------------
+# Colors
+# -----------------------------------------------------------
+#  Border of active windows.
+ColorActiveBorder="#c0c0c0"
+
+#  Background of pressed buttons.
+ColorActiveButton="#c0c0c0"
+
+#  Text color of pressed buttons.
+ColorActiveButtonText="#000000"
+
+#  Background of selected menu item, leave empty to force transparency.
+ColorActiveMenuItem="#000080"
+
+#  Text color of selected menu items.
+ColorActiveMenuItemText="#ffffff"
+
+#  Background for task buttons of the active window.
+ColorActiveTaskBarApp="#c0c0c0"
+
+#  Text color for task buttons of the active window.
+ColorActiveTaskBarAppText="#000000"
+
+#  Background of the titlebar of active windows.
+ColorActiveTitleBar="#000080"
+
+#  Text shadow of the titlebar of active windows.
+ColorActiveTitleBarShadow=""
+
+#  Text color of the titlebar of active windows.
+ColorActiveTitleBarText="#ffffff"
+
+#  Background of the active workspace button, ColorActiveButton is used if empty.
+ColorActiveWorkspaceButton=""
+
+#  Text color of the active workspace button, ColorActiveButtonText is used if empty.
+ColorActiveWorkspaceButtonText=""
+
+#  Background of battery monitor, leave empty to force transparency.
+ColorApm="#000000"
+
+#  Legacy option; don't use, see ColorApmBattery.
+ColorApmBattary="#ffff00"
+
+#  Color of battery monitor when discharging.
+ColorApmBattery="#ffff00"
+
+#  Background color for graph mode.
+ColorApmGraphBg="#000000"
+
+#  Color of battery monitor when charging.
+ColorApmLine="#00ff00"
+
+#  Text color of battery monitor.
+ColorApmText="#00ff00"
+
+#  Idle (non) load on the CPU monitor, leave empty to force transparency.
+ColorCPUStatusIdle="#000000"
+
+#  Interrupts on the CPU monitor.
+ColorCPUStatusInterrupts="#ffff00"
+
+#  IO Wait on the CPU monitor.
+ColorCPUStatusIoWait="#800080"
+
+#  Nice load on the CPU monitor.
+ColorCPUStatusNice="#0000ff"
+
+#  Soft Interrupts on the CPU monitor.
+ColorCPUStatusSoftIrq="#00ffff"
+
+#  Involuntary Wait on the CPU monitor.
+ColorCPUStatusSteal="rgb:FF/8A/91"
+
+#  System load on the CPU monitor.
+ColorCPUStatusSystem="#ff0000"
+
+#  Temperature of the CPU.
+ColorCPUStatusTemp="rgb:60/60/C0"
+
+#  User load on the CPU monitor.
+ColorCPUStatusUser="#00ff00"
+
+#  Background of non-LCD clock, leave empty to force transparency.
+ColorClock="#000000"
+
+#  Background of non-LCD monitor.
+ColorClockText="#00ff00"
+
+#  Background of the taskbar.
+ColorDefaultTaskBar="#c0c0c0"
+
+#  Background of dialog windows.
+ColorDialog="#c0c0c0"
+
+#  Shadow of regular menu items.
+ColorDisabledMenuItemShadow="#ffffff"
+
+#  Text color of disabled menu items.
+ColorDisabledMenuItemText="#808080"
+
+#  Background of text entry fields (e.g., the addressbar)
+ColorInput="#ffffff"
+
+#  Background of selected text in an entry field.
+ColorInputSelection="#000080"
+
+#  Selected text in an entry field.
+ColorInputSelectionText="#ffffff"
+
+#  Text color of text entry fields (e.g., the addressbar)
+ColorInputText="#000000"
+
+#  Background for task buttons of windows on other workspaces.
+ColorInvisibleTaskBarApp="#808080"
+
+#  Text color for task buttons of windows on other workspaces.
+ColorInvisibleTaskBarAppText="#000000"
+
+#  Background of labels, leave empty to force transparency.
+ColorLabel="#c0c0c0"
+
+#  Text color of labels.
+ColorLabelText="#000000"
+
+#  Background of listboxes.
+ColorListBox="#c0c0c0"
+
+#  Background of selected listbox items.
+ColorListBoxSelection="#000080"
+
+#  Text color of selected listbox items.
+ColorListBoxSelectionText="#ffffff"
+
+#  Text color in listboxes.
+ColorListBoxText="#000000"
+
+#  OS buffers usage in the memory monitor.
+ColorMEMStatusBuffers="rgb:60/60/C0"
+
+#  OS cached usage in the memory monitor.
+ColorMEMStatusCached="rgb:80/80/FF"
+
+#  Free memory in the memory monitor.
+ColorMEMStatusFree="#000000"
+
+#  User program usage in the memory monitor.
+ColorMEMStatusUser="rgb:40/40/80"
+
+#  Background for task buttons of minimized windows.
+ColorMinimizedTaskBarApp="rgb:A0/A0/A0"
+
+#  Text color for task buttons of minimized windows.
+ColorMinimizedTaskBarAppText="#000000"
+
+#  Background of move/resize status window.
+ColorMoveSizeStatus="#c0c0c0"
+
+#  Text color of move/resize status window.
+ColorMoveSizeStatusText="#000000"
+
+#  Idle (non) load on the network monitor, leave empty to force transparency.
+ColorNetIdle="#000000"
+
+#  Incoming load on the network monitor.
+ColorNetReceive="rgb:FF/00/FF"
+
+#  Outgoing load on the network monitor.
+ColorNetSend="#ffff00"
+
+#  Border of inactive windows.
+ColorNormalBorder="#c0c0c0"
+
+#  Background of regular buttons.
+ColorNormalButton="#c0c0c0"
+
+#  Text color of regular buttons.
+ColorNormalButtonText="#000000"
+
+#  Background of pop-up menus.
+ColorNormalMenu="#c0c0c0"
+
+#  Text color of regular menu items.
+ColorNormalMenuItemText="#000000"
+
+#  Background for task buttons of regular windows.
+ColorNormalTaskBarApp="#c0c0c0"
+
+#  Text color for task buttons of regular windows.
+ColorNormalTaskBarAppText="#000000"
+
+#  Background of the titlebar of regular windows.
+ColorNormalTitleBar="#808080"
+
+#  Text shadow of the titlebar of regular windows.
+ColorNormalTitleBarShadow=""
+
+#  Text color of the titlebar of regular windows.
+ColorNormalTitleBarText="#c0c0c0"
+
+#  Background of titlebar buttons.
+ColorNormalTitleButton="#c0c0c0"
+
+#  Text color of titlebar buttons.
+ColorNormalTitleButtonText="#000000"
+
+#  Background of workspace buttons, ColorNormalButton is used if empty.
+ColorNormalWorkspaceButton=""
+
+#  Text color of workspace buttons, ColorNormalButtonText is used if empty.
+ColorNormalWorkspaceButtonText=""
+
+#  Background of the quick switch window.
+ColorQuickSwitch="#c0c0c0"
+
+#  Rectangle arround the active icon in the quick switch window.
+ColorQuickSwitchActive=""
+
+#  Text color in the quick switch window.
+ColorQuickSwitchText="#000000"
+
+#  Scrollbar background (sliding area)
+ColorScrollBar="rgb:A0/A0/A0"
+
+#  Background of the arrow buttons in scrollbars (obsolete)
+ColorScrollBarArrow="#c0c0c0"
+
+#  Background of the arrow buttons in scrollbars.
+ColorScrollBarButton="#c0c0c0"
+
+#  Color of active arrows on scrollbar buttons.
+ColorScrollBarButtonArrow="#000000"
+
+#  Color of inactive arrows on scrollbar buttons.
+ColorScrollBarInactiveArrow="#808080"
+
+#  Background of the slider button in scrollbars.
+ColorScrollBarSlider="#c0c0c0"
+
+#  Background of toolbar buttons, ColorNormalButton is used if empty.
+ColorToolButton=""
+
+#  Text color of toolbar buttons, ColorNormalButtonText is used if empty.
+ColorToolButtonText=""
+
+#  Background of tooltips.
+ColorToolTip="#ffffe1"
+
+#  Text color of tooltips.
+ColorToolTipText="#000000"
+
+# -----------------------------------------------------------
+# Fonts
+# -----------------------------------------------------------
+#  Name of the active button font.
+ActiveButtonFontNameXft="sans-serif:size=8, MS UI Gothic:size=8, emoji:size=8:bold"
+
+#  Name of the active task bar item font.
+ActiveTaskBarFontNameXft="sans-serif:size=8, MS UI Gothic:size=8, emoji:size=8:bold"
+
+#  Name of the active workspace button font (fallback: ActiveButtonFontName).
+ActiveWorkspaceFontNameXft="sans-serif:size=8, MS UI Gothic:size=8, emoji:size=8"
+
+#  Name of the task bar battery font.
+ApmFontNameXft="monospace:size=12"
+
+#  Name of the task bar clock font.
+ClockFontNameXft="monospace:size=12"
+
+#  Name of the input field font.
+InputFontNameXft="sans-serif:size=8, MS UI Gothic:size=8, emoji:size=8"
+
+#  Name of the label font.
+LabelFontNameXft="sans-serif:size=8, MS UI Gothic:size=8, emoji:size=8"
+
+#  Name of the window list font.
+ListBoxFontNameXft="sans-serif:size=8, MS UI Gothic:size=8, emoji:size=8"
+
+#  Name of the menu font.
+MenuFontNameXft="sans-serif:size=8, MS UI Gothic:size=8, emoji:size=8"
+
+#  Name of the normal button font.
+NormalButtonFontNameXft="sans-serif:size=8, MS UI Gothic:size=8, emoji:size=8"
+
+#  Name of the normal task bar item font.
+NormalTaskBarFontNameXft="sans-serif:size=8, MS UI Gothic:size=8, emoji:size=8"
+
+#  Name of the normal workspace button font (fallback: NormalButtonFontName).
+NormalWorkspaceFontNameXft="sans-serif:size=8, MS UI Gothic:size=8, emoji:size=8"
+
+#  Name of the font for Alt+Tab switcher window.
+QuickSwitchFontNameXft="sans-serif:size=8:bold, MS UI Gothic:size=8, emoji:size=8"
+
+#  Name of the status display font.
+StatusFontNameXft="sans-serif:size=8:bold, MS UI Gothic:size=8, emoji:size=8"
+
+#  Name of the task bar temperature font.
+TempFontNameXft="monospace:size=12"
+
+#  Name of the title bar font.
+TitleFontNameXft="sans-serif:size=8:bold, MS UI Gothic:size=8, emoji:size=8"
+
+#  Name of the tool button font (fallback: NormalButtonFontName).
+ToolButtonFontNameXft="sans-serif:size=8, MS UI Gothic:size=8, emoji:size=8"
+
+#  Name of the tool tip font.
+ToolTipFontNameXft="sans-serif:size=8, MS UI Gothic:size=8, emoji:size=8"
